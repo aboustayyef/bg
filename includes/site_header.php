@@ -91,15 +91,6 @@ require_once('functions.php') ;
 				<div id = "logo" class ="span-9">
 					<a href ="<?php echo BASE_URL ; ?>"><img src ="design_images/bg_logo_website_468x262.png" width ="234" height ="131" alt ="Blue Gallery Logo"></a>
 				</div>
-				<?php 
-					if ($thispage !== "valentine") {
-						;?>
-						
-						<a href="./valentine"><img src ="posters/gift_ideas_teaser.png" class="teaser"></img></a>
-						
-						<?php
-					}
-				 ?>
 				
 
 

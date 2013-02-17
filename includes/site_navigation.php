@@ -12,6 +12,9 @@
 	});
 	</script>
 <div id ="nav" class ="span-15 last">
+	<div class="slogan">
+		Your destination for premium home and office furniture in Ghana
+	</div>
 <ul id="mega-menu-1" class="mega-menu">
 	<li <?php isactive("home") ?>><a href="<?php echo BASE_URL ; ?>">Home</a></li>
 	<li <?php isactive("about") ?>><a href="about.php">About</a></li>

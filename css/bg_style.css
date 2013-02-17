@@ -24,6 +24,16 @@
 	color:green;
 }
 
+.slogan{
+	border: 1px solid #D8D8D8;
+	color: #565656;
+	font-size: 1.4em;
+	font-family: Georgia, serif;
+	padding: 0.3em 1em ;
+	background-color: #FAFAFA;
+	margin-bottom: 38px;
+}
+
 .featurebackground{
 	background:  #999;
 }
@@ -63,7 +73,7 @@ ul.contactus input{
 }
 
 #nav{
-	margin-top: 100px;
+	margin-top: 20px;
 }
 
 h2.page_section{
@@ -686,6 +696,7 @@ ul.sharing_tools li a:hover {
 }
 
 div#topbar {
+	max-height: 43px;
 	background: #555;
 	overflow: auto;
 	width: 100%;
