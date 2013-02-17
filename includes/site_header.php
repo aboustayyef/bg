@@ -37,7 +37,6 @@ require_once('functions.php') ;
 <body class ="darkgrey">
 
 	<!-- All general javascript environment requests are made here -->
- 	
  	<!-- when offline use the local jQuery below -->
  	<!-- <script type="text/javascript" src='<?php echo BASE_URL ; ?>/js/jquery.js'></script> -->
 
@@ -58,7 +57,6 @@ require_once('functions.php') ;
 		<script type='text/javascript' src='<?php echo BASE_URL ; ?>/js/jquery.dcmegamenu.1.3.3.min.js'></script>
 
 	<div id="topbar">
-		
 		<?php  if ($_SESSION["loggedin"] == "bgmanagement") { ;?>
 				
 			<div id="loggedin">
@@ -66,7 +64,6 @@ require_once('functions.php') ;
 			</div>
 				
 		<?php  } ?>
-
 		<div id ="bar_container">
 			<div id="tarzan">A <a href="http://tarzan.com.gh">Tarzan Ent. Ltd</a> Company | &copy; 2013 - Ghana</div>
 			<ul>
