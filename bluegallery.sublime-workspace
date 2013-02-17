@@ -1,0 +1,935 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Amount",
+				"Amount_In_Stock"
+			],
+			[
+				"Prod",
+				"Product_Price"
+			],
+			[
+				"produc",
+				"product_row"
+			],
+			[
+				"Prod_",
+				"Prod_Name"
+			],
+			[
+				"mysql_fet",
+				"mysql_fetch_assoc"
+			],
+			[
+				"mysql_fe",
+				"mysql_fetch_assoc"
+			],
+			[
+				"pro",
+				"prod_price"
+			],
+			[
+				"Produc",
+				"Product_Price"
+			],
+			[
+				"prod",
+				"prod_id"
+			],
+			[
+				"varia",
+				"variant_price"
+			],
+			[
+				"enter",
+				"entered_username"
+			],
+			[
+				"entered_",
+				"entered_password"
+			],
+			[
+				"var",
+				"var"
+			],
+			[
+				"new",
+				"newamount"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"Varia",
+				"Variant_Price"
+			],
+			[
+				"Variant_",
+				"Variant_Name"
+			],
+			[
+				"vari",
+				"variant_amount_in_stock"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"pr",
+				"prod_name"
+			],
+			[
+				"var_",
+				"variant_name"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"destroy",
+				"session_destroy"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"if",
+				"if	if …"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"ent",
+				"entered_username"
+			],
+			[
+				"incl",
+				"incl1	include_once …"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"glo",
+				"global"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"error",
+				"error_reporting"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"prod_",
+				"prod_name"
+			],
+			[
+				"how",
+				"howmanyvariants"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"Varian",
+				"Variant_Name"
+			],
+			[
+				"produ",
+				"product_name"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"bord",
+				"border-left"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"product-image",
+				"product-image-vertical"
+			],
+			[
+				"uns",
+				"unset"
+			],
+			[
+				"cole",
+				"collection_type"
+			],
+			[
+				"prod_c",
+				"prod_collection_type"
+			],
+			[
+				"font",
+				"font-variant"
+			],
+			[
+				"page",
+				"page_content"
+			],
+			[
+				"pa",
+				"page_wanted"
+			],
+			[
+				"pag",
+				"page_title"
+			],
+			[
+				"mysql",
+				"mysql_query"
+			],
+			[
+				"query",
+				"msql_query"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"tec",
+				"technical_details_variant"
+			],
+			[
+				"tech",
+				"technical_details_product"
+			],
+			[
+				"techn",
+				"technical_details"
+			],
+			[
+				"variant",
+				"variant_ID"
+			],
+			[
+				"cat",
+				"category_url"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"varian",
+				"variant_ID"
+			],
+			[
+				"logi",
+				"login_alert"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"pading",
+				"padding-right"
+			],
+			[
+				"strp",
+				"strpos"
+			],
+			[
+				"li",
+				"link	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 181.0,
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"files",
+				"File: Search Files"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"snip",
+				"Snippet: <?php if (…) ?> … <?php endif ?>"
+			],
+			[
+				"snipp",
+				"Snippet: <?php $this->… ?>"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sideb",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sidebar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"comme",
+				"Toggle Comment"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"fetch",
+				"Fetch: Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"syn",
+				"Set Syntax: PHP"
+			],
+			[
+				"html	",
+				"Snippet: html"
+			],
+			[
+				"markd",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"mark",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"preview ",
+				"Markdown Preview: current file in browser"
+			],
+			[
+				"previ",
+				"Markdown Preview: current file in Sublime Text"
+			],
+			[
+				"preview",
+				"Markdown Preview: current file in browser"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"com",
+				"Toggle Comment"
+			],
+			[
+				"lor",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"commen",
+				"Toggle Comment"
+			],
+			[
+				"toggl",
+				"Toggle Comment"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/contact.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/l3.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/l3_simple_list.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/l3_list.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/edit.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/l4.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/l3_edit.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/includes/site_header.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/functions.php",
+		"/Applications/MAMP/logs/php_error.log",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/index.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/FlexSlider/css/flexslider_old.css",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/css/bg_style.css",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/valentine.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/includes/carousel_with_offers.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/valentines.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/valentine/index.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/valentines/index.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/includes/site_footer.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/includes/carousel.php",
+		"/Applications/MAMP/logs/apache_error.log",
+		"/Applications/MAMP/logs/mysql_error_log.err",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/browse.php",
+		"/Users/Stayyef/Downloads/Cidade de Deus 2002 720p BluRay nHD x264 NhaNc3.srt",
+		"/Volumes/Media/Movies/Cidade De Deus/CIDADE_DE_DEUS-2.srt",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/login.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/config.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/logout.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/barebones_page.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/l2.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/lights.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/lspecial.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/projects.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/search.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/where.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/about.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/specials/workstations.php",
+		"/Users/Stayyef/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/Stayyef/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/Stayyef/Library/Application Support/Sublime Text 2/Packages/User/slice_php.sublime-snippet",
+		"/Users/Stayyef/Library/Application Support/Sublime Text 2/Packages/User/doctype.sublime-snippet",
+		"/Users/Stayyef/Desktop/online-config-bluegallery.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/includes/site_navigation.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/specials/lights.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/contactengine.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/about_new.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/FlexSlider/css/flexslider.css",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/bluegallery_v4_2013-01-13.sql",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/bluegallery.sublime-workspace",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/site_footer.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/site_header.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/site_navigation.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/bluegallery.sublime-project",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/_page_skeleton.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/l4_v.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/testing_pdo.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/l4_h.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/css/dcmegamenu.css",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/test.html",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/error_log",
+		"/Users/Stayyef/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/bluegallery_v4_2012-11-28.sql",
+		"/Users/Stayyef/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/contactthanks.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/css/jqueryslidemenu.css",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/css/nav.css",
+		"/Users/Stayyef/Downloads/darknavmenu/index.html",
+		"/Users/Stayyef/Dropbox/_websites_/Tarzan_v2/index.php",
+		"/Users/Stayyef/Dropbox/_websites_/Tarzan_v2/contactform.php",
+		"/Users/Stayyef/Dropbox/_websites_/Tarzan_v2/css/bootstrap.css",
+		"/Users/Stayyef/Dropbox/_websites_/Tarzan_v2/functions.php",
+		"/Users/Stayyef/Dropbox/_websites_/Tarzan_v2/css/mustapha.css",
+		"/Users/Stayyef/Dropbox/_websites_/Tarzan_v2/config.php",
+		"/Users/Stayyef/Dropbox/_websites_/Tarzan_v2/tarzan.sublime-project",
+		"/Users/Stayyef/Dropbox/_websites_/Tarzan_v2/infopage.php",
+		"/Users/Stayyef/Dropbox/_websites_/Tarzan_v2/tarzan-website.sql",
+		"/Users/Stayyef/Dropbox/_websites_/Tarzan_v2/tarzan-images/config.php",
+		"/Users/Stayyef/Sites/html5boilerplate/css/main.css",
+		"/Users/Stayyef/Library/Application Support/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+		"/Users/Stayyef/Dropbox/_websites_/Tarzan_v2/index.html",
+		"/Users/Stayyef/Sites/ci/application/config/routes.php",
+		"/Users/Stayyef/Sites/ci/application/config/config.php",
+		"/Users/Stayyef/Sites/ci/application/views/about.php",
+		"/Users/Stayyef/Sites/ci/application/config/database.php",
+		"/Users/Stayyef/Sites/ci/application/config/autoload.php",
+		"/Users/Stayyef/Sites/ci/application/views/home.php",
+		"/Users/Stayyef/Library/Caches/Cleanup At Startup/Transmit/0FAD5835-0FCF-4576-B5D6-914B6AD5B87F/config.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/bluegallery_v4.sql",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/bluegallery_v4.sql.zip",
+		"/Users/Stayyef/Desktop/index.html",
+		"/Users/Stayyef/Sites/bluegallery_v4/public_html/site_header.php",
+		"/Users/Stayyef/Sites/bluegallery_v4/public_html/index.php",
+		"/Users/Stayyef/Sites/bluegallery_v4/public_html/functions.php",
+		"/Users/Stayyef/Sites/bluegallery_v4/public_html/todo.md",
+		"/Users/Stayyef/Sites/bluegallery_v4/public_html/contactengine.php",
+		"/Users/Stayyef/Sites/bluegallery_v4/public_html/l2.php",
+		"/Users/Stayyef/Sites/bluegallery_v4/public_html/l4_h.php",
+		"/Users/Stayyef/Sites/bluegallery_v4/public_html/l4_v.php",
+		"/Users/Stayyef/Sites/bluegallery_v4/public_html/css/bg_style.css",
+		"/Users/Stayyef/Sites/bluegallery_v4/public_html/l3.php",
+		"/Users/Stayyef/Sites/bluegallery_v4/l2.php",
+		"/Users/Stayyef/Dropbox/_websites_/redirector.php",
+		"/Users/Stayyef/Sites/bluegallery_v4/public_html/browse.php",
+		"/Users/Stayyef/Sites/cms-in-an-afternoon-php-mysql/config.php",
+		"/Users/Stayyef/Sites/bluegallery_v4/public_html/admin/index.php",
+		"/Users/Stayyef/Sites/bluegallery_v4/public_html/admin/index.html",
+		"/Users/Stayyef/Library/Caches/Cleanup At Startup/Transmit/5BCA958F-46F1-433A-8F71-17CEC865D782/functions.php",
+		"/Users/Stayyef/Library/Caches/Cleanup At Startup/Transmit/85895C30-CD6D-4373-92ED-6EF16B2736B8/style.css",
+		"/Users/Stayyef/Library/Caches/Cleanup At Startup/Transmit/A018F788-BE25-49A3-94D5-B7ACB4380E76/functions.php",
+		"/Users/Stayyef/Sites/bluegallery_v4/public_html/site_navigation.php",
+		"/Users/Stayyef/Sites/bluegallery_v4/public_html/config.php",
+		"/Users/Stayyef/Desktop/cyber-attack-bank-lebanon.html",
+		"/Users/Stayyef/Dropbox/_websites_/lebanon_dashboard/functions.php",
+		"/Users/Stayyef/Dropbox/_websites_/lebanon_dashboard/simplepie/simplepie.inc",
+		"/Users/Stayyef/Dropbox/_websites_/lebanon_dashboard/index.php",
+		"/Users/Stayyef/Dropbox/_websites_/lebanon_dashboard/newspapers.php",
+		"/Users/Stayyef/Sites/bdsp/index.php",
+		"/Users/Stayyef/Sites/bootstrap-1/assets/js/README.md",
+		"/Users/Stayyef/Library/Caches/Cleanup At Startup/Transmit/5E1749FD-D57D-4ED8-9525-2A9526D2F53A/functions.php",
+		"/Users/Stayyef/Library/Caches/Cleanup At Startup/Transmit/33CA76B4-7411-4D02-8F02-33E983AEB124/sidebar.php",
+		"/Users/Stayyef/Dropbox/_websites_/Tarzan_v2/carousel.js",
+		"/Users/Stayyef/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/Stayyef/Dropbox/_websites_/Tarzan_v2/js/bootstrap.min.js",
+		"/Users/Stayyef/Library/Application Support/Sublime Text 2/Packages/User/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/Stayyef/Dropbox/_websites_/bluegallery",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"65",
+			"m",
+			"SESSION",
+			"session",
+			"og:",
+			"&c",
+			"http://bluegallery.com.gh/",
+			"bluegallery",
+			"\">\n",
+			"http://bluegallery.com.gh/",
+			"bluegall",
+			"page_section",
+			"</small>",
+			"small",
+			"<small>",
+			"placehold",
+			"jquery.js",
+			"description",
+			"entered_username",
+			"'",
+			"\\",
+			"`",
+			"$_POST[]",
+			"value",
+			"h5",
+			"h3",
+			"<br>",
+			"label",
+			"newprice",
+			"Name",
+			"method",
+			"post",
+			"newdescription",
+			"label",
+			"Name",
+			"newprice",
+			"newdescription",
+			"img",
+			"FlexSlider",
+			"array",
+			"htt",
+			"rand",
+			"catrand",
+			"cat",
+			"special",
+			"Contact",
+			"hr",
+			"div",
+			"</",
+			"div",
+			"li",
+			"design",
+			"src",
+			"browse",
+			"brows",
+			"javascript",
+			"for",
+			"browse",
+			"BASE_URL",
+			"php",
+			"Room",
+			"Home",
+			"href",
+			"<li>",
+			"li",
+			"BASE_URL",
+			"room=",
+			"BASE_URL",
+			"<li>",
+			"jquery.js",
+			"/js/jquery",
+			"bluegallery.com.gh/new_beta//js",
+			"$headline",
+			"headli\nheadline",
+			"small",
+			"product-image",
+			"product-image-vertical",
+			"site_footer.php",
+			"site_header.php",
+			"holder.js",
+			"select\n\nselect",
+			"also in",
+			"more",
+			"jquery.min.js",
+			"-1\n\n\n\n\n\n\n\n\n\n\n\n0px",
+			"more details",
+			"orange\n\n",
+			"=\"\">",
+			"holder",
+			"select",
+			".jpeg",
+			"disp",
+			"theprefix",
+			"action-list",
+			"ipad",
+			"tablet",
+			"mobile",
+			"../assets/"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"includes/site_footer.php",
+			"includes/site_header.php",
+			".jpg"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"fun",
+				"bluegallery/functions.php"
+			],
+			[
+				"edit",
+				"bluegallery/edit.php"
+			],
+			[
+				"header",
+				"bluegallery/includes/site_header.php"
+			],
+			[
+				"bs",
+				"bluegallery/css/bg_style.css"
+			],
+			[
+				"valen",
+				"bluegallery/valentine.php"
+			],
+			[
+				"b",
+				"bluegallery/css/bg_style.css"
+			],
+			[
+				"logi",
+				"bluegallery/login.php"
+			],
+			[
+				"login",
+				"bluegallery/login.php"
+			],
+			[
+				"footer",
+				"bluegallery/includes/site_footer.php"
+			],
+			[
+				"css",
+				"bluegallery/css/bg_style.css"
+			],
+			[
+				"bg",
+				"bluegallery/css/bg_style.css"
+			],
+			[
+				"bg_st",
+				"bluegallery/css/bg_style.css"
+			],
+			[
+				"site_",
+				"bluegallery/includes/site_footer.php"
+			],
+			[
+				"functions",
+				"bluegallery/functions.php"
+			],
+			[
+				"f",
+				"bluegallery/functions.php"
+			],
+			[
+				"foot",
+				"bluegallery/includes/site_footer.php"
+			],
+			[
+				"bg_s",
+				"bluegallery/css/bg_style.css"
+			],
+			[
+				"about",
+				"bluegallery/about.php"
+			],
+			[
+				"where",
+				"bluegallery/where.php"
+			],
+			[
+				"conta",
+				"bluegallery/contact.php"
+			],
+			[
+				"style",
+				"bluegallery/css/bg_style.css"
+			],
+			[
+				"",
+				"bluegallery/about.php"
+			],
+			[
+				"hea",
+				"bluegallery/includes/site_header.php"
+			],
+			[
+				"head",
+				"bluegallery/includes/site_header.php"
+			],
+			[
+				"naviga",
+				"bluegallery/includes/site_navigation.php"
+			],
+			[
+				"cont",
+				"bluegallery/contact.php"
+			],
+			[
+				"foo",
+				"bluegallery/site_footer.php"
+			],
+			[
+				"flex",
+				"bluegallery/FlexSlider/css/flexslider.css"
+			],
+			[
+				"boots",
+				"Tarzan_v2/css/bootstrap.css"
+			],
+			[
+				"in",
+				"Tarzan_v2/index.php"
+			],
+			[
+				"func",
+				"Tarzan_v2/functions.php"
+			],
+			[
+				"info",
+				"Tarzan_v2/infopage.php"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"l4",
+				"l4_h.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 261.0,
+	"status_bar_visible": true
+}
