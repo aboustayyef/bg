@@ -73,7 +73,7 @@ require_once('functions.php') ;
 				<li><div class="fb-like" data-href="https://www.facebook.com/blue.gallery.ghana" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="lucida grande" data-colorscheme="dark"></div></li>
 				<li class ="social facebook"><a href ="https://www.facebook.com/blue.gallery.ghana"><img src ="design_images/transparent.gif" width = "25px" height = "25px"></a></li>
 				<li class = "social twitter"><a href="http://twitter.com/blue_gallery"><img src ="design_images/transparent.gif" width = "25px" height = "25px"></a></li>
-				<li class = "social pinterest"><a href="#"><img src ="design_images/transparent.gif" width = "25px" height = "25px"></a></li>
+				<li class = "social pinterest"><a href="http://pinterest.com/bluegallery/"><img src ="design_images/transparent.gif" width = "25px" height = "25px"></a></li>
 				<li> 
 					<form id ="search_form" action = "search.php" method ="get">
 						<input type = "text" name ="searchterm"></input>
