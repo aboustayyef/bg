@@ -26,17 +26,17 @@
 		</a>
 		<a href ="browse.php?room=101">
 			<li class ="square_box_homepage living">
-				<h3>Living Room</h3>
+				<h3>Living Rooms</h3>
 			</li>
 		</a>
 		<a href ="browse.php?room=102">
 			<li class ="square_box_homepage dining">
-				<h3>Dining Room</h3>
+				<h3>Dining Rooms</h3>
 			</li>
 		</a>
 		<a href ="browse.php?room=103">
 			<li class ="square_box_homepage last beds">
-				<h3>Bedroom</h3>
+				<h3>Bedrooms</h3>
 			</li>
 		</a>
 
