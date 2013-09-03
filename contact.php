@@ -16,8 +16,20 @@
 <?php
   $to='bluegalleryghana@gmail.com';
   $messageSubject='[Blue Gallery Contact Form]';
-  $confirmationSubject='Message sent';
-  $confirmationBody="Your message to Blue Gallery. has been received. We will get back to you as soon as possible";
+  $confirmationSubject='Automatic response - Your message to blue gallery was sent';
+  $confirmationBody=
+<<<EMAILBODY
+<div style ="width:95%;padding:1em;background:#F8F8F8;border: 1px solid #E8E8E8">
+<h3>Hello,</h3>
+
+<p>Thank you for your interest in Blue Gallery, Your destination for premium home and office furniture in Ghana.</p>
+
+<p>We hope you had a wonderful time on <a href="http://bluegallery.com.gh?src=eml">our website.</a> Your message has been received and we will contact you again within 5 business days.</p>
+<p>If you're in Ghana, feel free to pass by <a href ="http://bluegallery.com.gh/where.php?src=eml">our modern showroom</a> in Tema for a closer look of the amazing and tasteful collection we have.</p>
+<p>Thank you and best regards,</p>
+<p><strong>The email you sent appears below</strong></p><hr/><em>
+EMAILBODY;
+  
   $email='';
   $body='';
   $displayForm=true;
@@ -29,7 +41,7 @@
     $crack=eregi("(\r|\n)(to:|from:|cc:|bcc:)",$body);
     if ($email && $body && $valid && !$crack){
       if (mail($to,$messageSubject,$body,'From: '.$email."\r\n")
-          && mail($email,$confirmationSubject,$confirmationBody.$body,'From: '.$to."\r\n")){
+          && mail($email,$confirmationSubject,$confirmationBody.$body."</em></div>",'From: '.$to."\r\n"."MIME-Version: 1.0\r\n"."Content-Type: text/html; charset=ISO-8859-1\r\n")){
         $displayForm=false;
 ?>
 

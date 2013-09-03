@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"bor",
+				"border"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
 				"Amount",
 				"Amount_In_Stock"
 			],
@@ -144,20 +164,12 @@
 				"padding-right"
 			],
 			[
-				"fon",
-				"font-style"
-			],
-			[
 				"tex",
 				"text-transform"
 			],
 			[
 				"error",
 				"error_reporting"
-			],
-			[
-				"text",
-				"text-decoration"
 			],
 			[
 				"prod_",
@@ -210,10 +222,6 @@
 			[
 				"prod_c",
 				"prod_collection_type"
-			],
-			[
-				"font",
-				"font-variant"
 			],
 			[
 				"page",
@@ -472,6 +480,10 @@
 	},
 	"file_history":
 	[
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/includes/site_navigation.php",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/css/bg_style.css",
+		"/Users/Stayyef/Dropbox/_websites_/bluegallery/includes/site_header.php",
+		"/Users/Stayyef/Sites/beirutspring/wp-cron.php",
 		"/Users/Stayyef/Dropbox/_websites_/bluegallery/contact.php",
 		"/Users/Stayyef/Dropbox/_websites_/bluegallery/l3.php",
 		"/Users/Stayyef/Dropbox/_websites_/bluegallery/l3_simple_list.php",
@@ -479,12 +491,10 @@
 		"/Users/Stayyef/Dropbox/_websites_/bluegallery/edit.php",
 		"/Users/Stayyef/Dropbox/_websites_/bluegallery/l4.php",
 		"/Users/Stayyef/Dropbox/_websites_/bluegallery/l3_edit.php",
-		"/Users/Stayyef/Dropbox/_websites_/bluegallery/includes/site_header.php",
 		"/Users/Stayyef/Dropbox/_websites_/bluegallery/functions.php",
 		"/Applications/MAMP/logs/php_error.log",
 		"/Users/Stayyef/Dropbox/_websites_/bluegallery/index.php",
 		"/Users/Stayyef/Dropbox/_websites_/bluegallery/FlexSlider/css/flexslider_old.css",
-		"/Users/Stayyef/Dropbox/_websites_/bluegallery/css/bg_style.css",
 		"/Users/Stayyef/Dropbox/_websites_/bluegallery/valentine.php",
 		"/Users/Stayyef/Dropbox/_websites_/bluegallery/includes/carousel_with_offers.php",
 		"/Users/Stayyef/Dropbox/_websites_/bluegallery/valentines.php",
@@ -514,7 +524,6 @@
 		"/Users/Stayyef/Library/Application Support/Sublime Text 2/Packages/User/slice_php.sublime-snippet",
 		"/Users/Stayyef/Library/Application Support/Sublime Text 2/Packages/User/doctype.sublime-snippet",
 		"/Users/Stayyef/Desktop/online-config-bluegallery.php",
-		"/Users/Stayyef/Dropbox/_websites_/bluegallery/includes/site_navigation.php",
 		"/Users/Stayyef/Dropbox/_websites_/bluegallery/specials/lights.php",
 		"/Users/Stayyef/Dropbox/_websites_/bluegallery/contactengine.php",
 		"/Users/Stayyef/Dropbox/_websites_/bluegallery/about_new.php",

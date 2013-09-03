@@ -62,9 +62,7 @@
 	<li><img src="design_images/brand_logos/index.png"></li>
 	<li><img src="design_images/brand_logos/ligne_pure.gif"></li>
 	<li><img src="design_images/brand_logos/sia-home-fashion.gif"></li>
-	<li><img src="design_images/brand_logos/sleepcomfort.png"></li>
 	<li><img src="design_images/brand_logos/metalspot.png"></li>
-
 </ul>
 	<?php include("includes/site_footer.php");?> <!-- ==== the footer is outside blueprint.css hence outside the container class=== -->
 </div>
