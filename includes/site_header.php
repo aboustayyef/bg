@@ -84,6 +84,19 @@ require_once('functions.php') ;
 	<div id = "mainpage">
 		<div class ="container "> <!-- Blueprint 24 column main wrapper -->
 		<div id ="bg_header"> 
+
+			<!-- potomanto banner -->
+			<?php if ($thispage == "home") {
+				?>
+				<div class ="span-24">
+					<a href = "potomanto.php"><img src="design_images/potomanto-strip-tall.jpg" alt="Potomanto promotion"></a>
+					<hr style ="display:hidden">
+
+				</div>
+
+				<?php
+			} ?>
+
 			<div id = "logo_nav" class ="span-24">
 				<div id = "logo" class ="span-9">
 					<a href ="<?php echo BASE_URL ; ?>"><img src ="design_images/bg_logo_website_468x262.png" width ="234" height ="131" alt ="Blue Gallery Logo"></a>

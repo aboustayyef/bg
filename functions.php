@@ -144,7 +144,9 @@ function display_title($room, $category, $product){
 		{
 		$product_name = product_name($product);
 		}
-
+	if ($thispage == "potomanto"){
+		return "Potomanto Movie and Blue Gallery";
+	}
 	if ($thispage == "valentine") {
 		$page_title = "Valentine's Day Gift Ideas, Blue Gallery Ghana";
 		return $page_title;
