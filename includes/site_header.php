@@ -65,7 +65,7 @@ require_once('functions.php') ;
 				
 		<?php  } ?>
 		<div id ="bar_container">
-			<div id="tarzan">A <a href="http://tarzan.com.gh">Tarzan Ent. Ltd</a> Company | &copy; 2013 - Ghana</div>
+			<div id="tarzan">A <a href="http://tarzan.com.gh">Tarzan Ent. Ltd</a> Company | &copy; 2014 - Ghana</div>
 			<ul>
 				<li><div class="fb-like" data-href="https://www.facebook.com/blue.gallery.ghana" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="lucida grande" data-colorscheme="dark"></div></li>
 				<li class ="social facebook"><a href ="https://www.facebook.com/blue.gallery.ghana"><img src ="design_images/transparent.gif" width = "25px" height = "25px"></a></li>
