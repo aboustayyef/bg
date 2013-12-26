@@ -1,0 +1,231 @@
+/* This is the file where all the variables will be */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Typography css goes here */
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+small {
+  font-size: 0.6em;
+}
+
+.stress {
+  font-style: italic;
+  color: #b3b3b3;
+}
+
+/* Layout css goes here */
+body {
+  background-color: #d9d9d9;
+}
+
+#tarzan {
+  width: 100%;
+  min-width: 1000px;
+  margin: 0;
+  padding: 0;
+  background-color: #999;
+}
+#tarzan .inner-row {
+  width: 1000px;
+}
+
+.paper {
+  width: 998px;
+  border: 1px solid #cccccc;
+  background-color: white;
+  margin: 20px auto;
+}
+
+/* Always use both outer and inner row for each row. Outer row allows us to do things that extend to the margins
+Inner Row is the basis of the grid */
+.outer-row {
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+
+.inner-row {
+  position: relative;
+  width: 960px;
+  padding: 8px 0;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.breath {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* The Grid */
+.half {
+  float: left;
+  width: 472.5px;
+  margin-right: 15px;
+}
+.half img {
+  max-width: 100%;
+  height: auto;
+}
+
+.third {
+  float: left;
+  width: 310px;
+  margin-right: 15px;
+}
+.third img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fourth {
+  float: left;
+  width: 228.75px;
+  margin-right: 15px;
+}
+.fourth img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fifth {
+  float: left;
+  width: 180px;
+  margin-right: 15px;
+}
+.fifth img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Just to stack things horizontally with a right margin */
+.hstack {
+  float: left;
+  margin-right: 15px;
+}
+.hstack img {
+  max-width: 100%;
+  height: auto;
+}
+
+.last {
+  margin-right: 0;
+}
+
+/* header */
+#slogan h3 {
+  color: #565656;
+  background: #FAFAFA;
+  padding: 7px 20px;
+  font-size: 16px;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+/* Navigation Bar */
+#navbar ul {
+  list-style: none;
+  width: 600px;
+  position: absolute;
+  top: 112px;
+  right: 0;
+}
+#navbar li {
+  float: left;
+  margin-right: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* Slideshow */
+#slideshow {
+  float: left;
+  height: 347px;
+  width: 824px;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 0;
+  margin: 0;
+}
+
+#feat1 {
+  float: right;
+  height: 173px;
+  width: 173px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+#feat2 {
+  float: right;
+  height: 173px;
+  width: 173px;
+  border-bottom: 1px solid gray;
+}

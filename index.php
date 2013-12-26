@@ -1,70 +1,191 @@
-<?php session_start(); $thispage ="home" ; ?>
+<?php 
+require_once('init.php');
 
-<?php include("includes/site_header.php") ; ?> <!-- === Logo, contacts and searchbox === -->
-<?php include("includes/site_navigation.php");?> <!-- === the site's navigation === -->
+?>
 
-<?php include("includes/carousel.php") ;?>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="<?php echo WEBPATH.'style/css/style.css' ?>">
+	<title>Blue Gallery Home &amp; Office - Contemporary Furniture in Ghana</title>
+</head>
+<body>
+	<div id="tarzan">
+		<div class="inner-row">
+			A Tarzan Ent. Ltd Company | &copy; 2014 - Ghana
+		</div>
+	</div>
+	<div class="paper">
 
-<!--  <?php bg_url(101) ; ?>   -->
+		<div class="outer-row">
+			<div id="slogan"><h3>Your destination for premium home and office furniture in Ghana</h3></div>
+		</div>
 
-<h2 class ="page_section" style = "clear:both">Explore our collection <small> Browse our entire stock from the comfort of your home</small></h2>
-<hr class = "space">
+		<div id="header" class="outer-row breath">
+			<div class="inner-row">
+				<img src="<?php echo WEBPATH.'images/interface/';?>bg_logo_website_468x262.png" width ="234" height ="131" alt="Blue Gallery Logo">
+				<div id="navbar">
+					<ul>
+						<li><a href=""></a>Home</li>
+						<li><a href=""></a>About</li>
+						<li><a href=""></a>Collection</li>
+						<li><a href=""></a>Projects</li>
+						<li><a href=""></a>Contact Us</li>
+						<li><a href=""></a>Locate Us</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-<div id ="browse-collection" class ="span-24">
-	<ul class ="thumbnails">
-		<a href ="<?php echo BASE_URL ; ?>/browse.php?room=105">
-			<li class ="square_box_homepage office">
-				<img src ="design_images/new_red.png" class ="new_overlay">
-				<h3>Offices</h3>
-			</li>
-		</a>
-		<a href ="browse.php?room=104">
-			<li class ="square_box_homepage accessories">
-				<img src ="design_images/new_red.png" class ="new_overlay">
-				<h3>Accessories</h3>
-			</li>
-		</a>
-		<a href ="browse.php?room=101">
-			<li class ="square_box_homepage living">
-				<h3>Living Rooms</h3>
-			</li>
-		</a>
-		<a href ="browse.php?room=102">
-			<li class ="square_box_homepage dining">
-				<h3>Dining Rooms</h3>
-			</li>
-		</a>
-		<a href ="browse.php?room=103">
-			<li class ="square_box_homepage last beds">
-				<h3>Bedrooms</h3>
-			</li>
-		</a>
+		<div class="outer-row">
+			<div id="slideshow">
+				<img src="<?php echo WEBPATH.'images/slideshow/';?>824x347-playing-with-light-metalspot.jpg" alt="blue gallery slide">
+			</div>
+			<div id="feat1">
+				<img src="<?php echo WEBPATH.'images/slideshow/';?>173x173-the-airpad.jpg" alt="feature 1">
+			</div>
+			<div id="feat2">
+				<img src="<?php echo WEBPATH.'images/slideshow/';?>173x173-potomanto.jpg" alt="feature 1">
+			</div>
+		</div>
 
-	</ul>
-</div>
+		<div class="outer-row breath">
+			<div class="inner-row">
+				<h2>
+					<span>Explore our collection</span>
+					<small class ="stress">Browse our entire stock from the comfort of your home</small>
+				</h2>
+			</div>
+		</div>
 
-<hr class = "space">
-<h2 class ="page_section">New items <small>Latest arrivals, special offers and announcements</small></h2>
-<hr class = "space">
+		<div class="outer-row">
+			<div class="inner-row">
+				<div class="fifth">
+					<div class="collection-feature"><img src="http://placehold.it/175x175" alt=""></div>
+				</div>
+				<div class="fifth">
+					<div class="collection-feature"><img src="http://placehold.it/175x175" alt=""></div>
+				</div>
+				<div class="fifth">
+					<div class="collection-feature"><img src="http://placehold.it/175x175" alt=""></div>
+				</div>
+				<div class="fifth">
+					<div class="collection-feature"><img src="http://placehold.it/175x175" alt=""></div>
+				</div>
+				<div class="fifth last">
+					<div class="collection-feature"><img src="http://placehold.it/175x175" alt=""></div>
+				</div>
+			</div>
+		</div>
 
-<div id ="main-page-ad1" class ="span-6"><a href="browse.php?room=104&amp;category=254"><img src ="posters/230x142_artificial_flowers.jpg"></a></div>
-<div id ="main-page-ad2" class ="span-6"><a href="browse.php?room=104&amp;category=253"><img src ="posters/230x142_carpets.jpg"></a></div>
-<div id ="main-page-ad3" class ="span-6"><a href="<?php echo BASE_URL ; ?>/browse.php?room=104&amp;category=255&amp;special=lights"><img src ="posters/230x142_lights.jpg"></a></div>
-<div id ="main-page-ad4" class ="span-6 last"><a href="<?php echo BASE_URL ; ?>/where.php"><img src ="posters/230x142_our_showroom.jpg"></a></div>
+		<div class="outer-row breath">
+			<div class="inner-row">
+				<h2>
+					<span>New Items</span>
+					<small class ="stress">Latest arrivals, special offers and announcements</small>
+				</h2>
+			</div>
+		</div>
 
-<hr class = "space">
-<h2 class="page_section">Our Brands <small>Finest products from all around the world</small></h2>
-<hr class = "space">
+		<div class="outer-row">
+			<div class="inner-row">
+				<div class="fourth">
+					<div class="new-items-feature"><img src="http://placehold.it/230x142" alt=""></div>
+				</div>
+				<div class="fourth">
+					<div class="new-items-feature"><img src="http://placehold.it/230x142" alt=""></div>
+				</div>
+				<div class="fourth">
+					<div class="new-items-feature"><img src="http://placehold.it/230x142" alt=""></div>
+				</div>
+				<div class="fourth last">
+					<div class="new-items-feature"><img src="http://placehold.it/230x142" alt=""></div>
+				</div>
+			</div>
+		</div>
 
-<ul class ="list_of_brands">
-	<li><img src="design_images/brand_logos/Orrefors.gif"></li>
-	<li><img src="design_images/brand_logos/aran_newform.png"></li>
-	<li><img src="design_images/brand_logos/index.png"></li>
-	<li><img src="design_images/brand_logos/ligne_pure.gif"></li>
-	<li><img src="design_images/brand_logos/sia-home-fashion.gif"></li>
-	<li><img src="design_images/brand_logos/metalspot.png"></li>
-</ul>
-	<?php include("includes/site_footer.php");?> <!-- ==== the footer is outside blueprint.css hence outside the container class=== -->
-</div>
+		<div class="outer-row">
+			<div class="inner-row">
+				<div class="half">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, odio beatae sed eum voluptates ea sequi veritatis id. Perspiciatis, animi, ipsam totam repudiandae reprehenderit molestiae dicta rerum vitae incidunt laboriosam nemo quo placeat sapiente corporis.</div>
+				<div class="half last">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, saepe, officiis, dolore vel numquam aliquid soluta expedita quas neque perspiciatis placeat non itaque dicta consectetur nisi vero quam necessitatibus est laboriosam iste accusamus nulla voluptates.</div>
+			</div>
+		</div>
+		
+		<div class="outer-row">
+			<div class="inner-row">
+				<div class="third">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem qui ab et cum corporis cupiditate ipsam beatae quos ipsa facilis.</p>
+				</div>
+				<div class="third">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, aut ipsum maxime molestiae aperiam porro pariatur ipsam adipisci fugit facilis.</p>
+				</div>
+				<div class="third last">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, blanditiis libero ullam temporibus labore eveniet iure nihil. Hic, quisquam, natus?</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="outer-row">
+			<div class="inner-row">
+				<h2>
+					<span>Explore our collection</span>
+					<small class ="stress">Browse our entire stock from the comfort of your home</small>
+				</h2>
+			</div>
+		</div>
+
+		<div class="outer-row">
+			<div class="inner-row">
+				<div class="fourth">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem qui ab et cum corporis cupiditate ipsam beatae quos ipsa facilis.</p>
+				</div>
+				<div class="fourth">
+					<img src="http://placehold.it/248x60">
+				</div>
+				<div class="fourth">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, aut ipsum maxime molestiae aperiam porro pariatur ipsam adipisci fugit facilis.</p>
+				</div>
+				<div class="fourth last">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, blanditiis libero ullam temporibus labore eveniet iure nihil. Hic, quisquam, natus?</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="outer-row">
+			<div class="inner-row">
+				<div class="fifth">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem qui ab et cum corporis cupiditate ipsam beatae quos ipsa facilis.</p>
+				</div>
+				<div class="fifth">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, aut ipsum maxime molestiae aperiam porro pariatur ipsam adipisci fugit facilis.</p>
+				</div>
+				<div class="fifth">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, aut ipsum maxime molestiae aperiam porro pariatur ipsam adipisci fugit facilis.</p>
+				</div>
+				<div class="fifth">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, aut ipsum maxime molestiae aperiam porro pariatur ipsam adipisci fugit facilis.</p>
+				</div>
+				<div class="fifth last">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, blanditiis libero ullam temporibus labore eveniet iure nihil. Hic, quisquam, natus?</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="outer-row ">
+			<div class="inner-row">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eum officiis molestiae quidem repellendus voluptatibus voluptate quasi hic ex neque. Tempora, nemo, sequi, repellendus maxime quae accusantium blanditiis rerum fugiat harum alias a illum officiis minima aliquid quasi quod possimus. Totam, labore officiis voluptatibus sint sunt ratione autem quas dicta!</p>
+			</div>
+		</div>
+
+		<div class="outer-row dark">
+			<div class="inner-row">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eum officiis molestiae quidem repellendus voluptatibus voluptate quasi hic ex neque. Tempora, nemo, sequi, repellendus maxime quae accusantium blanditiis rerum fugiat harum alias a illum officiis minima aliquid quasi quod possimus. Totam, labore officiis voluptatibus sint sunt ratione autem quas dicta!</p>
+			</div>
+		</div>
+
+	</div>
 </body>
 </html>
+
+<?php ?>

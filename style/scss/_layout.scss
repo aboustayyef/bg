@@ -1,0 +1,92 @@
+/* Layout css goes here */
+
+body{
+	background-color: darken(white, 15);
+}
+
+#tarzan{
+	width:100%;
+	min-width: 1000px;
+	margin:0;
+	padding:0;
+	background-color: #999;
+	.inner-row{
+		width: $outer-width;
+	}
+}
+
+
+
+.paper{
+	width: ($outer-width - 2); // for borders
+	border: 1px solid darken(white,20);
+	background-color: white;
+	margin: 20px auto;
+}
+
+
+/* Always use both outer and inner row for each row. Outer row allows us to do things that extend to the margins
+Inner Row is the basis of the grid */
+
+.outer-row{
+	margin:0;
+	padding:0;
+	clear: both;
+}
+
+.inner-row{
+	position:relative;
+	width:$inner-width;
+	padding: 8px 0;
+	margin:0 auto;
+	overflow: auto;
+}
+
+.breath{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+
+/* The Grid */
+
+.half{
+	float:left;
+	width: ($inner-width - $gutter)/2;
+	margin-right: $gutter;
+	img{max-width: 100%;height:auto;}
+}
+
+.third{
+	float:left;
+	width: ($inner-width - ($gutter * 2))/3;
+	margin-right: $gutter;
+	img{max-width: 100%;height:auto;}
+
+}
+
+.fourth{
+	float:left;
+	width: ($inner-width - ($gutter *3))/4;
+	margin-right: $gutter;
+	img{max-width: 100%;height:auto;}
+}
+
+.fifth{
+	float:left;
+	width: ($inner-width - ($gutter *4))/5;
+	margin-right: $gutter;
+	img{max-width: 100%;height:auto;}
+
+}
+
+/* Just to stack things horizontally with a right margin */
+.hstack{
+	float: left;
+	margin-right: $gutter;
+	img{max-width: 100%;height:auto;}
+}
+
+.last{
+	margin-right:0;
+}

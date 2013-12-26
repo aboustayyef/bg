@@ -1,0 +1,61 @@
+/* header */
+
+#slogan {
+	h3 {
+		color: #565656;
+		background: #FAFAFA;
+		padding: 7px 20px;
+		font-size: 16px;
+		border-bottom: 1px solid #D8D8D8;
+	}
+}
+
+/* Navigation Bar */
+
+#navbar{
+	ul{
+		list-style: none;
+		width: 600px;
+		position: absolute;
+		top: 112px;
+		right: 0;
+	}
+	li{
+		float: left;
+		margin-right: 10px;
+		padding-right: 10px;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+}
+
+
+
+/* Slideshow */
+
+$border-color: lighten(black, 50);
+#slideshow{
+	float: left;
+	height: 347px; // effectively 349 with borders
+	width: 824px; // effectively 825 with borders
+	border-top: 1px solid $border-color;
+	border-right: 1px solid $border-color;
+	border-bottom: 1px solid $border-color;
+	padding:0;
+	margin:0;
+}
+
+#feat1{
+	float: right;
+	height: 173px; // effectively 175 with borders
+	width: 173px; // unchanged
+	border-top: 1px solid $border-color;
+	border-bottom: 1px solid $border-color;
+}
+
+#feat2{
+	float: right;
+	height: 173px; //effectively 174 with border
+	width: 173px; //unchanged
+	border-bottom: 1px solid $border-color;
+}
