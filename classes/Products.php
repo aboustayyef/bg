@@ -13,12 +13,21 @@ class Products
 		}
 	}
 
-	public static function product_exists($id){
-		$result = DB::getInstance()->get('Products', array('prod_ID','=',$id))->results();
-		if (isset($result[0]->Prod_Name)) {
+	public static function category_has_poster($id){
+		$result = DB::getInstance()->get('Categories', array('cat_id','=',$id))->results();
+		if ((isset($result[0]->cat_poster)) && (!empty($result[0]->cat_poster))) {
 			return TRUE;
 		}else{
 			return FALSE;
+		}
+	}
+
+	public static function get_category_poster($id){
+		if (self::category_has_poster($id)) {
+			$result = DB::getInstance()->get('Categories', array('cat_id','=',$id))->results();
+			return WEBPATH.'images/posters/'.$result[0]->cat_poster;
+		} else {
+			return NULL;
 		}
 		
 	}
@@ -28,6 +37,15 @@ class Products
 		$connection = DB::getInstance();
 		$results = $connection->get('Categories', array('cat_id','=', $id))->results();
 		return $results[0];
+	}
+
+	public static function product_exists($id){
+		$result = DB::getInstance()->get('Products', array('prod_ID','=',$id))->results();
+		if (isset($result[0]->Prod_Name)) {
+			return TRUE;
+		}else{
+			return FALSE;
+		}
 	}
 
 	public static function get_product_details($id){

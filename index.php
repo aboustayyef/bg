@@ -1,42 +1,9 @@
 <?php 
 require_once('init.php');
+$page_title = 'Blue Gallery Home &amp; Office - Contemporary furniture in Ghana';
+include_once(ABSPATH.'views/header.php');
 
 ?>
-
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="<?php echo WEBPATH.'style/css/style.css' ?>">
-	<title>Blue Gallery Home &amp; Office - Contemporary Furniture in Ghana</title>
-</head>
-<body>
-	<div id="tarzan">
-		<div class="inner-row">
-			A Tarzan Ent. Ltd Company | &copy; 2014 - Ghana
-		</div>
-	</div>
-	<div class="paper">
-
-		<div class="outer-row">
-			<div id="slogan"><h3>Your destination for premium home and office furniture in Ghana</h3></div>
-		</div>
-
-		<div id="header" class="outer-row breath">
-			<div class="inner-row">
-				<img src="<?php echo WEBPATH.'images/interface/';?>bg_logo_website_468x262.png" width ="234" height ="131" alt="Blue Gallery Logo">
-				<div id="navbar">
-					<ul>
-						<li><a href=""></a>Home</li>
-						<li><a href=""></a>About</li>
-						<li><a href=""></a>Collection</li>
-						<li><a href=""></a>Projects</li>
-						<li><a href=""></a>Contact Us</li>
-						<li><a href=""></a>Locate Us</li>
-					</ul>
-				</div>
-			</div>
-		</div>
 
 		<div class="outer-row">
 			<div id="slideshow">
@@ -184,8 +151,4 @@ require_once('init.php');
 			</div>
 		</div>
 
-	</div>
-</body>
-</html>
-
-<?php ?>
+<?php require_once(ABSPATH.'views/footer.php'); ?>
