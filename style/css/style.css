@@ -54,24 +54,32 @@ table {
 }
 
 /* Typography css goes here */
+body {
+  font-family: 'Helvetica Neue', Sans-serif;
+}
+
 h1 {
   font-size: 2em;
 }
 
 h2 {
-  font-size: 1.8em;
-}
-
-h3 {
   font-size: 1.6em;
 }
 
-h4 {
+h3 {
   font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
 }
 
 small {
   font-size: 0.6em;
+}
+
+.gfont1 {
+  font-family: 'Playfair Display', serif;
 }
 
 .stress {
@@ -88,11 +96,8 @@ body {
   width: 100%;
   min-width: 1000px;
   margin: 0;
-  padding: 0;
+  padding: 8px 20px;
   background-color: #999;
-}
-#tarzan .inner-row {
-  width: 1000px;
 }
 
 .paper {
@@ -155,6 +160,7 @@ Inner Row is the basis of the grid */
 }
 
 .fifth {
+  position: relative;
   float: left;
   width: 180px;
   margin-right: 15px;
@@ -179,12 +185,161 @@ Inner Row is the basis of the grid */
 }
 
 /* header */
+body {
+  background: url("subtle_white_feathers.png");
+}
+
+.font_sans {
+  font-family: "Helvetica Neue", Arial, Sans-serif;
+}
+
+.font_serif {
+  font-family: Georgia, Serif;
+}
+
+#tarzan {
+  color: #a8a8a8;
+  font-size: 13px;
+  line-height: 20px;
+  background: #555;
+}
+#tarzan a {
+  display: block;
+  float: left;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+}
+#tarzan a:hover {
+  text-decoration: underline;
+}
+#tarzan img {
+  float: left;
+  margin-right: 7px;
+}
+
+#slogan {
+  color: #999999;
+  background: #F5F5F5;
+  padding: 7px 20px;
+  border-bottom: 1px solid #D8D8D8;
+  overflow-y: auto;
+}
+#slogan h4 {
+  float: left;
+  line-height: 24px;
+  font-size: 14px;
+}
+#slogan ul {
+  float: right;
+}
+#slogan ul li {
+  margin-top: 3px;
+  float: left;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+#slogan ul li i {
+  color: #b3b3b3;
+  font-size: 22px;
+}
+#slogan ul li i:hover {
+  color: gray;
+}
+#slogan ul li input {
+  margin-top: 0;
+  padding: 2px;
+  width: 220px;
+}
+
+/* Slideshow */
+#slideshow {
+  float: left;
+  position: relative;
+  height: 347px;
+  width: 824px;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 0;
+  margin: 0;
+}
+
+div.slide {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#feat1 {
+  float: right;
+  height: 173px;
+  width: 173px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+#feat2 {
+  float: right;
+  height: 173px;
+  width: 173px;
+  border-bottom: 1px solid gray;
+}
+
+/* Explore our collection */
+.collection-feature:hover .intermodal {
+  display: block;
+}
+.collection-feature .intermodal {
+  text-transform: uppercase;
+  display: none;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 65px 30px;
+  width: 115px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Products Grid */
+a li.square_box {
+  border: 1px solid #bcbcbc;
+  float: left;
+  text-align: center;
+  width: 167px;
+  height: 230px;
+  display: block;
+  position: relative;
+  padding: 5px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 15px;
+}
+a li.square_box.last {
+  margin-right: 0px;
+  margin-left: 1px;
+}
+a li.square_box:hover {
+  border: 1px solid orange;
+}
+a li.square_box:hover h4 {
+  color: orange;
+}
+a li h4 {
+  color: #4d4d4d;
+}
+
 /* Navigation Bar */
 #navbar ul {
   list-style: none;
   position: absolute;
-  top: 112px;
+  top: 106px;
   right: 0;
+  z-index: 101;
 }
 #navbar ul li {
   float: left;
@@ -207,119 +362,65 @@ Inner Row is the basis of the grid */
 }
 
 #navbar-l2 {
+  z-index: 100;
   position: absolute;
   top: 240px;
   left: 770px;
   display: none;
 }
-#navbar-l2 ul {
+#navbar-l2 ul.left-panel {
   border-top: 1px solid;
-  width: 150px;
+  width: 200px;
+  min-height: 200px;
   background: white;
 }
-#navbar-l2 ul:first-child {
+#navbar-l2 ul.left-panel:first-child {
   border-left: 1px solid #666666;
   border-bottom: 1px solid #666666;
   border-right: 1px solid #666666;
 }
-#navbar-l2 ul li {
+#navbar-l2 ul.left-panel li {
   padding: 8px;
 }
-#navbar-l2 ul li a {
+#navbar-l2 ul.left-panel li a {
   font-family: Helvetica Neue, sans-serif;
   color: #333333;
   text-decoration: none;
 }
-#navbar-l2 ul li.active {
-  background: #b3b3b3;
+#navbar-l2 ul.left-panel li.active {
+  background: #737373;
 }
-#navbar-l2 ul li.active:after {
+#navbar-l2 ul.left-panel li.active:after {
   content: ">";
   position: absolute;
   right: 10px;
   color: white;
 }
-#navbar-l2 ul li ul {
+#navbar-l2 ul.left-panel li.active a {
+  color: white;
+}
+#navbar-l2 ul.left-panel li ul.right-panel {
   display: none;
   background: whitesmoke;
   position: absolute;
-  left: 150px;
+  left: 200px;
   width: 250px;
+  min-height: 200px;
   top: 0;
   border: 1px solid #666666;
 }
-#navbar-l2 ul li ul.active {
+#navbar-l2 ul.left-panel li ul.right-panel.active {
   display: block;
 }
-#navbar-l2 ul li ul li.active {
+#navbar-l2 ul.left-panel li ul.right-panel li {
+  border-bottom: 1px dotted #bfbfbf;
+}
+#navbar-l2 ul.left-panel li ul.right-panel li a {
+  color: #333333;
+}
+#navbar-l2 ul.left-panel li ul.right-panel li.active {
   background: #b3b3b3;
 }
-#navbar-l2 ul li ul li.active:after {
+#navbar-l2 ul.left-panel li ul.right-panel li.active:after {
   content: none;
-}
-
-body {
-  background: url("subtle_white_feathers.png");
-}
-
-.font_sans {
-  font-family: "Helvetica Neue", Arial, Sans-serif;
-}
-
-.font_serif {
-  font-family: Georgia, Serif;
-}
-
-#slogan h3 {
-  color: #565656;
-  background: #FAFAFA;
-  padding: 7px 20px;
-  font-size: 16px;
-  border-bottom: 1px solid #D8D8D8;
-}
-
-/* Slideshow */
-#slideshow {
-  float: left;
-  height: 347px;
-  width: 824px;
-  border-top: 1px solid gray;
-  border-right: 1px solid gray;
-  border-bottom: 1px solid gray;
-  padding: 0;
-  margin: 0;
-}
-
-#feat1 {
-  float: right;
-  height: 173px;
-  width: 173px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-}
-
-#feat2 {
-  float: right;
-  height: 173px;
-  width: 173px;
-  border-bottom: 1px solid gray;
-}
-
-/* Products Grid */
-li.square_box {
-  border: 1px solid #bcbcbc;
-  float: left;
-  text-align: center;
-  width: 167px;
-  height: 230px;
-  display: block;
-  position: relative;
-  padding: 5px;
-  margin-bottom: 15px;
-  margin-left: 0px;
-  margin-right: 15px;
-}
-li.square_box.last {
-  margin-right: 0px;
-  margin-left: 1px;
 }

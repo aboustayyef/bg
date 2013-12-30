@@ -1,20 +1,27 @@
 /* Typography css goes here */
+body{
+	font-family:'Helvetica Neue', Sans-serif;
+}
 
 h1{
 	font-size: 2em;
 }
 h2{
-	font-size: 1.8em;
-}
-h3{
 	font-size: 1.6em;
 }
-h4{
+h3{
 	font-size: 1.4em;
+}
+h4{
+	font-size: 1.2em;
 }
 
 small{
 	font-size: 0.6em;
+}
+
+.gfont1{
+	font-family: 'Playfair Display', serif;
 }
 
 .stress {

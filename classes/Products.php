@@ -39,6 +39,14 @@ class Products
 		return $results[0];
 	}
 
+	public static function get_category_name($id){
+		if ($id==0) {
+			return 'Home';
+		}
+		$results = self::get_category_details($id);
+		return $results->cat_name;
+	}
+
 	public static function product_exists($id){
 		$result = DB::getInstance()->get('Products', array('prod_ID','=',$id))->results();
 		if (isset($result[0]->Prod_Name)) {
@@ -55,8 +63,16 @@ class Products
 		return $results[0];
 	}
 
+	public static function get_product_name($id){
+		if ($id==0) {
+			return 'Home';
+		}
+		$results = self::get_product_details($id);
+		return $results->Prod_Name;
+	}
+
 	public static function has_subcategories($id){
-		/*check if category has subcategories*/
+		/* check if category has subcategories, if not, it is a product */
 		$connection = DB::getInstance();
 		$results = $connection->get('Categories', array('cat_parent_id', '=', $id))->results();
 		if (count($results) > 0) { // has subcategories
@@ -75,6 +91,17 @@ class Products
 		} else {
 			$results = $connection->get('Products', array('Prod_Parent_Category', '=', $id))->results();
 			return $results;
+		}
+	}
+
+	public static function get_parent($kind, $id){
+		$connection = DB::getInstance();
+		if ($kind == 'product') { // it's a product, get parent from products table
+			$result = $connection->get('Products',array('Prod_ID','=',$id))->results();
+			return $result[0]->Prod_Parent_Category;
+		} else { // it's a category, get parent from categories table
+			$result = $connection->get('Categories',array('cat_id','=',$id))->results();
+			return $result[0]->cat_parent_id;
 		}
 	}
 

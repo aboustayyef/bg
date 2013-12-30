@@ -8,11 +8,8 @@ body{
 	width:100%;
 	min-width: 1000px;
 	margin:0;
-	padding:0;
+	padding:8px 20px;
 	background-color: #999;
-	.inner-row{
-		width: $outer-width;
-	}
 }
 
 
@@ -73,6 +70,7 @@ Inner Row is the basis of the grid */
 }
 
 .fifth{
+	position: relative;
 	float:left;
 	width: ($inner-width - ($gutter *4))/5;
 	margin-right: $gutter;

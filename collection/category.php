@@ -16,18 +16,21 @@ if (Products::has_subcategories($category)) {
 	$descendants_type = 'category';
 	$desc_key = 'cat_id';
 	$desc_name = 'cat_name';
+	$desc_description= 'cat_description';
 } else {
 	$descendants_type = 'product';
 	$desc_key = 'Prod_ID';
 	$desc_name = 'Prod_Name';
+	$desc_description= 'Prod_Description';
 }
-
+//echo $descendants_type;
 /* Collect descendent details, to use for rendering */
 $items = array();
 foreach ($descendants as $key => $descendant) {
 	$items[$key]['name'] =  $descendant->$desc_name;
 	$items[$key]['thumb'] = Products::get_thumb($descendants_type, $descendant->$desc_key);
-	$items[$key]['link'] = 'http://placeholder';
+	$items[$key]['link'] = Render::make_link($descendants_type, $descendant->$desc_key);
+	$items[$key]['description'] = $descendant->$desc_description;
 }
 
 
@@ -44,7 +47,7 @@ include_once(ABSPATH.'views/header.php');
 echo '<div class ="outer-row"><hr></div>';
 
 echo BEGINROW;
-echo 'Breadcrumbs > goes > here <br>';
+echo Render::draw_breadcrumbs('category', $category);
 echo ENDROW;
 
 echo BEGINROW;

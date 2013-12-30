@@ -6,7 +6,6 @@ class Render
 {
 	
 	public static function draw_grid($items, $poster=NULL){
-		
 		echo '<ul>';
 		$map= "11110111101111011110111101111011110111101111011110111101111011110111101111011110";
 		
@@ -16,20 +15,122 @@ class Render
 		}
 		
 		foreach ($items as $key => $item) {
+			echo '<a href ="'.$item['link'].'" title="'.$item['description'].'">';
 			echo '<li class ="square_box';
 			if (substr($map, $key,1) == 0) {
 				echo ' last';
 			}
 			echo '">';
 			echo '<img src ="',$item['thumb'],'">';
+			echo '<h4 class ="productname">'.$item['name'].'</h4>';
 			echo '</li>';
+			echo '</a>';
 		}
 		echo '</ul>';
 	
 	}
 
-	public static function draw_breadcrumbs($id, $product_or_category){
-		#action goes here
+	public static function draw_navbar(){
+
+		$ids = array(101,102,103,104,105); // list of rooms
+
+		echo '<div id ="navbar-l2">';
+		
+		echo '<ul class="left-panel">';
+		foreach ($ids as $key => $id) {
+			// get room detail
+			$details = Products::get_category_details($id);
+			echo '<li><a href="'.self::make_link('category', $details->cat_id).'">'.$details->cat_name.'</a>';
+
+			// get descendant details
+			$results = Products::get_descendants($id);
+			echo '<ul class="right-panel">';
+			foreach ($results as $key => $result) {
+				echo '<li><a href ="'.self::make_link('category', $result->cat_id).'">'.$result->cat_name.'</a></li>';
+			}
+			echo '</ul>';
+		}
+		echo '</ul></div>';
+	}
+
+	public static function draw_breadcrumbs($kind, $id){
+		$breadcrumbs=array();
+		
+		// first item, the current item, is always the same as $id;
+		if ($kind == 'product') {
+			$name = Products::get_product_name($id);
+		} else {
+			$name = Products::get_category_name($id);
+		}
+		$breadcrumbs[] 	= array(
+			'category' 	=> $id,
+		 	'link'		=> NULL,
+		 	'name'		=> $name
+		 );
+
+		// The first parent category depends on whether child kind is a product or category;
+		if ($kind=='product') {
+			$id = Products::get_parent('product',$id);
+			$breadcrumbs[] 	= array(
+				'category' 	=> $id,
+			 	'link'		=> self::make_link('category',$id),
+			 	'name'		=> Products::get_category_name($id)
+			 );
+		} else {
+			$id = Products::get_parent('category',$id);
+			$breadcrumbs[] 	= array(
+				'category' 	=> $id,
+			 	'link'		=> self::make_link('category',$id),
+			 	'name'		=> Products::get_category_name($id)
+			 );
+		}
+
+		// the rest are always categories, keep looping until id = 0 (home);
+		while (1) {
+			if ($id == 0) { // we have reached the top
+				break;
+			}
+			$id = Products::get_parent('category',$id);
+			$breadcrumbs[] 	= array(
+				'category' 	=> $id,
+			 	'link'		=> self::make_link('category',$id),
+			 	'name'		=> Products::get_category_name($id)
+			 );
+		}
+
+		// render the actual thing
+		$br_html = "";
+		$breadcrumbs = array_reverse($breadcrumbs);
+		foreach ($breadcrumbs as $key => $crumb) {
+			if ($crumb['link']) {
+				$br_html .= '<a href ="'.$crumb['link'].'">'.$crumb['name'].'</a> > ';
+			}else{
+				$br_html .= $crumb['name'];
+			}
+		}
+		return $br_html;
+
+	}
+
+	public static function make_link($kind, $id){
+		// if the $id is 0, it automatically take us home
+		if ($id == 0) {
+			return WEBPATH.'.';
+		}
+		switch ($kind) {
+			case 'category':
+				$url = WEBPATH.'collection/?cat='.$id;
+				return $url;
+				break;
+			case 'product':
+				$url = WEBPATH.'collection/?prod='.$id;
+				return $url;
+				break;
+			default:
+				$url = WEBPATH.'collection/?cat='.$id;
+				return $url;
+				break;
+		}
 	}
 }
 
