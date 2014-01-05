@@ -12,6 +12,10 @@ body{
 	font-family: Georgia, Serif;
 }
 
+.dark{
+	background-color: #EBEBEB;
+}
+
 #tarzan{
 
 	color:#a8a8a8;
@@ -124,6 +128,15 @@ div.slide{
 		position:absolute;
 		top:0;
 		left:0;
+	}
+}
+
+#brand-logos{
+	img{
+		opacity:.3;
+		&:hover{
+			opacity:.7;
+		}
 	}
 }
 
@@ -254,6 +267,118 @@ a{
 						}
 					}
 				}
+			}
+		}
+	}
+}
+
+#footer{
+	.inner-row{
+		margin-top:10px;
+		font-size:0.8em;
+		line-height:1.5em;
+		$footercolor: lighten(black, 50);
+		color: $footercolor;
+		.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+			float:left;
+			height:145px;
+			border-right:1px solid lighten($footercolor,20);
+			margin-right:2%;
+			padding-right:2%;
+		}
+		
+		hr{
+			margin-top:15px;
+			margin-bottom:15px;
+		}
+
+		div.floater{
+			img{
+				float:left;
+			}
+			p{
+				width:200px;
+				float:left;
+				margin-left: 10px;
+			}
+			overflow: auto;
+		}
+		.footer-col-1{
+			width: 30%;
+		}
+		.footer-col-2{
+			width:14%;
+		}	
+		.footer-col-3{
+			width:14%;
+		}	
+		.footer-col-4{
+			width:26%;
+			margin-right:0;
+			padding-right:0;
+			border-right:none;
+		}	
+	}
+}
+
+/* Breadcrumbs */
+#breadcrumbs{
+	padding-left:10px;
+	padding-top:10px;
+	border-top:1px solid darken(white, 20);
+	a{
+		color: black;
+		font-weight: bold;
+		text-decoration: none;
+	}
+}
+
+/* Products */
+
+h2.productname{
+	padding:5px;
+	color:white;
+	background: lighten(black, 30);
+}
+
+.poster-sidebar{
+	width:265px;
+	float: left;
+}
+
+.list-items{
+	width:695px;
+	float:left;
+	ul{
+		padding: 0 20px;
+		li{
+			//cursor:pointer;
+			margin-top:10px;
+			padding-left:20px;
+			border-left: 1px dotted darken(white, 20);
+			border-bottom: 1px dotted darken(white, 20);
+			overflow: auto;
+			&:hover{
+				padding-left:16px;
+				border-left:5px solid $highlight;
+				h4 a{
+					color:$highlight;
+				}
+			}
+			h4{
+				margin-top:10px;
+				margin-bottom: 10px;
+				a{
+					color:darken(white, 40);
+					text-decoration: none;
+				}
+			}
+			p{
+				width:400px;
+				line-height: 1.4em;
+			}
+			img{
+				float: right;
 			}
 		}
 	}

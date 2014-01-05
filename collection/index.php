@@ -1,7 +1,11 @@
 <?php 
 require_once('../init.php');
 
-/*Require an ID*/
+/*
+This is just a routing page 
+it depends on URL Parameters to redirect
+requirements: 'cat' or 'prod' parameters
+*/
 
 if ((!isset($_GET['cat']) || empty($_GET['cat'])) && (!isset($_GET['prod']) || empty($_GET['prod']))) {
 	die('page needs category or product id to proceed');
@@ -18,7 +22,7 @@ if ($cat) {
 		$category = $cat;
 		include_once('category.php');
 	} else {
-		echo "Category $cat doesn't exists";
+		die("Category $cat doesn't exists");
 	}
 }
 
@@ -27,12 +31,7 @@ if ($prod) {
 		$product = $prod;
 		include_once('product.php');
 	} else {
-		echo "Product $prod doesn't exists";
+		die("Product $prod doesn't exists");
 	}
 }
-
-// if $id is a product, display product page
-// if $id is a category, display category.
-
-
 ?>

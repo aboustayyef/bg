@@ -9,19 +9,22 @@
 
 
 require_once('init.php');
-$br = Render::draw_breadcrumbs('category', 201);
 
-echo $br;
+$all_items = array();
+$start_index = 0;
 
-//echo Products::get_parent('category',202);
+$connection = DB::getInstance();
+$level1 = $connection->query('SELECT cat_id FROM Categories WHERE cat_parent_id = 0')->results();
+$all_items = $level1;
+foreach ($level1 as $key => $category) {
+	$level2 = Products::get_descendants($category);
+	$all_items[$category] = $level2;
+}
 
-/*$connection = DB::getInstance();
-$connection->get('Categories', array('cat_id','=','201'));
-var_dump($connection->results());*/
-
-
-
-//echo '<img src ="'.Products::get_thumb('product', 259).'">'; 
 ?>
+<pre>
+	<?php var_dump($all_items) ?>
+</pre>
+
 </body>
 </html>

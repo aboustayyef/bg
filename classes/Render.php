@@ -27,7 +27,35 @@ class Render
 			echo '</a>';
 		}
 		echo '</ul>';
-	
+	}
+
+	public static function draw_list($items, $poster=NULL){
+		?>
+			<div class="poster-sidebar">
+				<img src="<?=$poster?>" alt="">
+			</div>
+			<div class="list-items">
+				<?php 
+					echo '<ul class ="items-list">';
+					foreach ($items as $key => $item) {
+						?>
+							<li>
+								<div class="item">
+									<a href ="<?php echo $item['link']?>"><img src="<?php echo $item['thumb']; ?>"></a>
+									<h4 class="productname">
+										<a href ="<?php echo $item['link']?>"><?php echo $item['name']?></a>
+									</h4>
+									<p class="item-description">
+										<?php echo $item['description']?>
+									</p>							
+								</div>
+							</li>
+						<?php
+					}
+					echo '</ul>'
+				?>
+			</div>
+		<?php
 	}
 
 	public static function draw_navbar(){

@@ -29,7 +29,11 @@ class Products
 		} else {
 			return NULL;
 		}
-		
+	}
+
+	public static function get_room_poster($id){
+		$result = DB::getInstance()->get('Rooms', array('room_id','=',$id))->results();
+		return WEBPATH.'images/posters/'.$result[0]->room_poster;
 	}
 
 	public static function get_category_details($id){
@@ -94,6 +98,7 @@ class Products
 		}
 	}
 
+
 	public static function get_parent($kind, $id){
 		$connection = DB::getInstance();
 		if ($kind == 'product') { // it's a product, get parent from products table
@@ -103,6 +108,11 @@ class Products
 			$result = $connection->get('Categories',array('cat_id','=',$id))->results();
 			return $result[0]->cat_parent_id;
 		}
+	}	
+
+	public static function get_parent_details($kind, $id){
+		$parent_id = self::get_parent($kind,$id);
+		return self::get_category_details($parent_id);
 	}
 
 	public static function get_random_descendant($id){
@@ -122,6 +132,12 @@ class Products
 		return $results;
 	}
 
+	public static function get_available_variants($product){
+		$connection = DB::getInstance();
+		$results = $connection->query('SELECT * FROM Variants WHERE Parent_Product_ID ="'.$product.'" AND Amount_In_Stock > 0')->results();
+		return $results;
+	}
+
 	public static function get_random_variant($prod_id){
 		$all_variants = self::get_all_variants($prod_id);
 		$howmany = count($all_variants);
@@ -129,6 +145,15 @@ class Products
 		return $all_variants[$random]->Variant_ID;
 	}
 
+
+	public static function product_has_stock($product){
+		$available_variants = self::get_available_variants($product);
+		if (count($available_variants) > 0) {
+			return TRUE;
+		}else{
+			return FALSE;
+		}
+	}
 	public static function get_thumb($kind, $id){ // $kind could be 'product' or 'category';
 		
 		/* This class takes an id and produces a thumbnail's url. 
@@ -138,8 +163,8 @@ class Products
 		switch ($kind) {
 			case 'product':
 				# code...
-				$variant_code = self::get_random_variant($id);
-				$path = WEBPATH.'images/products/thumbs/'.$variant_code.'_thumb.jpg';
+				$variant = self::get_random_variant($id);
+				$path = WEBPATH.'images/products/thumbs/'.$variant.'_thumb.jpg';
 				return $path;
 				break;
 			
@@ -149,10 +174,10 @@ class Products
 				} else {
 					return self::get_thumb('product', self::get_random_descendant($id));
 				}
+
 				break;
 		}
 	}
-
 
 }
 

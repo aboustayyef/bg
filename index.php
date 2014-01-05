@@ -5,6 +5,7 @@ include_once(ABSPATH.'views/header.php');
 
 ?>
 
+		<!-- Slideshow -->
 		<div class="outer-row">
 			<div id="slideshow">
 				<div class="slide" style="z-index:3"><a href=""><img src="<?php echo WEBPATH.'images/slideshow/';?>824x347-elegance-simplicity-aran.jpg" width ="824" height="347" alt="blue gallery slide"></a></div>
@@ -20,6 +21,7 @@ include_once(ABSPATH.'views/header.php');
 			</div>
 		</div>
 
+		<!-- Explore Our Collection -->
 		<div class="outer-row breath">
 			<div class="inner-row">
 				<h2>
@@ -64,6 +66,7 @@ include_once(ABSPATH.'views/header.php');
 			</div>
 		</div>
 
+		<!-- New Items -->
 		<div class="outer-row breath">
 			<div class="inner-row">
 				<h2>
@@ -76,20 +79,42 @@ include_once(ABSPATH.'views/header.php');
 		<div class="outer-row">
 			<div class="inner-row">
 				<div class="fourth">
-					<div class="new-items-feature"><img src="http://placehold.it/230x142" alt=""></div>
+					<a href=""><div class="new-items-feature"><img src="<?php echo WEBPATH.'images/posters/230x142_artificial_flowers.jpg' ?>" alt="Artificial Flowers"></a></div>
 				</div>
 				<div class="fourth">
-					<div class="new-items-feature"><img src="http://placehold.it/230x142" alt=""></div>
+					<a href=""><div class="new-items-feature"><img src="<?php echo WEBPATH.'images/posters/230x142_carpets.jpg' ?>" alt="Carpets and Rugs"></a></div>
 				</div>
 				<div class="fourth">
-					<div class="new-items-feature"><img src="http://placehold.it/230x142" alt=""></div>
+					<a href=""><div class="new-items-feature"><img src="<?php echo WEBPATH.'images/posters/230x142_lights.jpg' ?>" alt="Lights and Fixtures"></a></div>
 				</div>
 				<div class="fourth last">
-					<div class="new-items-feature"><img src="http://placehold.it/230x142" alt=""></div>
+					<a href=""><div class="new-items-feature"><img src="<?php echo WEBPATH.'images/posters/230x142_our_showroom.jpg' ?>" alt="Find our showroom"></a></div>
 				</div>
 			</div>
 		</div>
 
-		
+
+		<!-- Our Brands -->
+
+		<div class="outer-row breath">
+			<div class="inner-row">
+				<h2>
+					<span>Our Brands</span>
+					<small class ="stress">Finest products from all around the world</small>
+				</h2>
+			</div>
+		</div>
+
+		<div class="outer-row">
+			<div id ="brand-logos" class="inner-row">
+				<div class="hstack"><img src ="<?php echo WEBPATH.'images/brand-logos/Orrefors.gif' ?>"></div>
+				<div class="hstack"><img src ="<?php echo WEBPATH.'images/brand-logos/aran_newform.png' ?>"></div>
+				<div class="hstack"><img src ="<?php echo WEBPATH.'images/brand-logos/interstuhl.png' ?>"></div>
+				<div class="hstack"><img src ="<?php echo WEBPATH.'images/brand-logos/sia-home-fashion.gif' ?>"></div>
+				<div class="hstack"><img src ="<?php echo WEBPATH.'images/brand-logos/ligne_pure.gif' ?>"></div>
+				<div class="hstack last"></div>
+			</div>
+		</div>
+
 
 <?php require_once(ABSPATH.'views/footer.php'); ?>

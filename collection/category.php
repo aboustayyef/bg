@@ -11,7 +11,7 @@ $category_details = Products::get_category_details($category);
 /* Get Category Descendents */
 $descendants = Products::get_descendants($category);
 
-/* Find out the type of descendants (products or categories, to be used to produce urls) */
+/* Find out the type of descendants. We need that detail to produce urls */
 if (Products::has_subcategories($category)) {
 	$descendants_type = 'category';
 	$desc_key = 'cat_id';
@@ -23,14 +23,25 @@ if (Products::has_subcategories($category)) {
 	$desc_name = 'Prod_Name';
 	$desc_description= 'Prod_Description';
 }
-//echo $descendants_type;
+
 /* Collect descendent details, to use for rendering */
 $items = array();
+$count = 0;
 foreach ($descendants as $key => $descendant) {
-	$items[$key]['name'] =  $descendant->$desc_name;
-	$items[$key]['thumb'] = Products::get_thumb($descendants_type, $descendant->$desc_key);
-	$items[$key]['link'] = Render::make_link($descendants_type, $descendant->$desc_key);
-	$items[$key]['description'] = $descendant->$desc_description;
+
+	//Skip Products that don't have stock
+	if ($descendants_type == 'product') {
+		if (!Products::product_has_stock($descendant->$desc_key)) {
+			//ignore products that don't have stock
+			continue;
+		}
+	}
+
+	$items[$count]['name'] =  $descendant->$desc_name;
+	$items[$count]['thumb'] = Products::get_thumb($descendants_type, $descendant->$desc_key);
+	$items[$count]['link'] = Render::make_link($descendants_type, $descendant->$desc_key);
+	$items[$count]['description'] = $descendant->$desc_description;
+	$count +=1;
 }
 
 
@@ -38,25 +49,50 @@ foreach ($descendants as $key => $descendant) {
 	Display part begins
 */
 
-$page_title = '';
+/* Get title and description of page */
+$page_title = $category_details->cat_name . ' at Blue Gallery';
 $page_description = '';
-// add facebook specific details
+// To Do: add facebook specific details
 
 include_once(ABSPATH.'views/header.php');
 
-echo '<div class ="outer-row"><hr></div>';
+?>
 
-echo BEGINROW;
-echo Render::draw_breadcrumbs('category', $category);
-echo ENDROW;
+<!-- Breadcrumbs -->
+<div class="outer-row">
+	<div class="inner-row">
+		<div id ="breadcrumbs"> 
+			<?php echo Render::draw_breadcrumbs('category', $category); ?>
+		</div>
+	</div>
+</div>
+<?php
+?>
 
-echo BEGINROW;
-echo '<h2>',$category_details->cat_name,'</h2>';
-echo ENDROW;
+<div class="outer-row">
+	<div class="inner-row">
+		<?php echo '<h2 class ="productname">',$category_details->cat_name,'</h2>'; ?>
+	</div>
+</div>
 
-echo BEGINROW;
-Render::draw_grid($items, Products::get_category_poster($category));
-echo ENDROW;
+<div class="outer-row">
+	<div class="inner-row">
+<?php
+
+/* If this is a room , use the list view. Otherwise, use the gird view */
+
+if ($category_details->cat_parent_id == 0) {
+	$room_poster = Products::get_room_poster($category);
+	Render::draw_list($items, $room_poster);
+} else {
+	$category_poster = Products::get_category_poster($category);
+	Render::draw_grid($items, $category_poster);
+}
+?>
+	</div>
+</div>
+
+<?php
 include_once(ABSPATH.'views/footer.php');
 
 

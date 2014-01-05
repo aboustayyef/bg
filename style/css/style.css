@@ -124,6 +124,7 @@ Inner Row is the basis of the grid */
 }
 
 .breath {
+  margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -195,6 +196,10 @@ body {
 
 .font_serif {
   font-family: Georgia, Serif;
+}
+
+.dark {
+  background-color: #EBEBEB;
 }
 
 #tarzan {
@@ -303,6 +308,13 @@ div.slide {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+#brand-logos img {
+  opacity: .3;
+}
+#brand-logos img:hover {
+  opacity: .7;
 }
 
 /* Products Grid */
@@ -423,4 +435,109 @@ a li h4 {
 }
 #navbar-l2 ul.left-panel li ul.right-panel li.active:after {
   content: none;
+}
+
+#footer .inner-row {
+  margin-top: 10px;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  color: gray;
+}
+#footer .inner-row .footer-col-1, #footer .inner-row .footer-col-2, #footer .inner-row .footer-col-3, #footer .inner-row .footer-col-4 {
+  float: left;
+  height: 145px;
+  border-right: 1px solid #b3b3b3;
+  margin-right: 2%;
+  padding-right: 2%;
+}
+#footer .inner-row hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#footer .inner-row div.floater {
+  overflow: auto;
+}
+#footer .inner-row div.floater img {
+  float: left;
+}
+#footer .inner-row div.floater p {
+  width: 200px;
+  float: left;
+  margin-left: 10px;
+}
+#footer .inner-row .footer-col-1 {
+  width: 30%;
+}
+#footer .inner-row .footer-col-2 {
+  width: 14%;
+}
+#footer .inner-row .footer-col-3 {
+  width: 14%;
+}
+#footer .inner-row .footer-col-4 {
+  width: 26%;
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}
+
+/* Breadcrumbs */
+#breadcrumbs {
+  padding-left: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #cccccc;
+}
+#breadcrumbs a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Products */
+h2.productname {
+  padding: 5px;
+  color: white;
+  background: #4d4d4d;
+}
+
+.poster-sidebar {
+  width: 265px;
+  float: left;
+}
+
+.list-items {
+  width: 695px;
+  float: left;
+}
+.list-items ul {
+  padding: 0 20px;
+}
+.list-items ul li {
+  margin-top: 10px;
+  padding-left: 20px;
+  border-left: 1px dotted #cccccc;
+  border-bottom: 1px dotted #cccccc;
+  overflow: auto;
+}
+.list-items ul li:hover {
+  padding-left: 16px;
+  border-left: 5px solid #f77211;
+}
+.list-items ul li:hover h4 a {
+  color: #f77211;
+}
+.list-items ul li h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.list-items ul li h4 a {
+  color: #999999;
+  text-decoration: none;
+}
+.list-items ul li p {
+  width: 400px;
+  line-height: 1.4em;
+}
+.list-items ul li img {
+  float: right;
 }

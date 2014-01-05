@@ -6,7 +6,7 @@ BG_APP = {
 		mouse_in_menu: 'no',
 		fixLocation: function(){
 			/* Position Menu Vertically */
-			$('#navbar-l2').css('top', $('#header').position().top+$('#navbar').position().top +7 );
+			$('#navbar-l2').css('top', $('#header').position().top+$('#navbar').position().top +17 );
 			
 			/* Position Menu Horizontally*/
 			var x = ($(window).width() - $('.paper').width())/2;

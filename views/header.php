@@ -21,7 +21,7 @@
 	<!-- End Facebook stuff -->
 
 	<div id="tarzan">
-			<img src ="<?php echo WEBPATH.'images/interface/tarzan-mini-logo.png'; ?>" height="20" width="auto"><a href="http://tarzan.com.gh">Tarzan Ent. Ltd</a> &nbsp;| &copy; 2014 - Ghana
+			<img src ="<?php echo WEBPATH.'images/interface/tarzan-mini-logo.png'; ?>" height="20" width="13.5"><a href="http://tarzan.com.gh">Tarzan Ent. Ltd</a> &nbsp;| &copy; 2014 - Ghana
 	</div>
 
 	<?php Render::draw_navbar() ?>
@@ -35,7 +35,7 @@
 					<li><div class="fb-like" data-href="https://www.facebook.com/blue.gallery.ghana" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div></li>
 					<a href="http://twitter.com/blue_gallery"><li><i class="fa fa-twitter-square"></i></li></a>
 					<a href="http://pinterest.com/bluegallery/"><li><i class="fa fa-pinterest-square"></i></li></a>
-					<li><form action=""><input type="text"></form></li>
+					<li><form action=""><input type="search" placeholder="search our collection"></form></li>
 				</ul>
 			
 			</div>
