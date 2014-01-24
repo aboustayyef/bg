@@ -7,6 +7,6 @@ require_once('config.php');
 require_once('classes/DB.php'); // class for connecting to Database
 require_once('classes/Products.php'); // class for products
 require_once('classes/Render.php'); // class for products
-
+require_once('classes/Users.php'); // class for products
 
 ?>

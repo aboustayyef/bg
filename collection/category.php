@@ -13,37 +13,10 @@ $descendants = Products::get_descendants($category);
 
 /* Find out the type of descendants. We need that detail to produce urls */
 if (Products::has_subcategories($category)) {
-	$descendants_type = 'category';
-	$desc_key = 'cat_id';
-	$desc_name = 'cat_name';
-	$desc_description= 'cat_description';
-} else {
-	$descendants_type = 'product';
-	$desc_key = 'Prod_ID';
-	$desc_name = 'Prod_Name';
-	$desc_description= 'Prod_Description';
+	$items = Products::convert_to_items('category', $descendants);
+}else{
+	$items = Products::convert_to_items('product', $descendants);
 }
-
-/* Collect descendent details, to use for rendering */
-$items = array();
-$count = 0;
-foreach ($descendants as $key => $descendant) {
-
-	//Skip Products that don't have stock
-	if ($descendants_type == 'product') {
-		if (!Products::product_has_stock($descendant->$desc_key)) {
-			//ignore products that don't have stock
-			continue;
-		}
-	}
-
-	$items[$count]['name'] =  $descendant->$desc_name;
-	$items[$count]['thumb'] = Products::get_thumb($descendants_type, $descendant->$desc_key);
-	$items[$count]['link'] = Render::make_link($descendants_type, $descendant->$desc_key);
-	$items[$count]['description'] = $descendant->$desc_description;
-	$count +=1;
-}
-
 
 /*
 	Display part begins
@@ -59,11 +32,9 @@ include_once(ABSPATH.'views/header.php');
 ?>
 
 <!-- Breadcrumbs -->
-<div class="outer-row">
+<div id = "breadcrumbs" class="outer-row">
 	<div class="inner-row">
-		<div id ="breadcrumbs"> 
 			<?php echo Render::draw_breadcrumbs('category', $category); ?>
-		</div>
 	</div>
 </div>
 <?php

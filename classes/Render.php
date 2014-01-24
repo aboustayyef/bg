@@ -7,11 +7,12 @@ class Render
 	
 	public static function draw_grid($items, $poster=NULL){
 		echo '<ul>';
-		$map= "11110111101111011110111101111011110111101111011110111101111011110111101111011110";
 		
-		if (isset($poster)) { // first two rows are shifted right by two columns
+		if (isset($poster)) { // if there's a poster, shift grid by 2x2 to the right
 			$map= "110110111101111011110111101111011110111101111011110111101111011110111101111011110";
 			echo '<img src = "'.$poster.'" style ="float:left;margin-right:17px">';
+		} else {
+			$map= "11110111101111011110111101111011110111101111011110111101111011110111101111011110";
 		}
 		
 		foreach ($items as $key => $item) {
@@ -32,7 +33,7 @@ class Render
 	public static function draw_list($items, $poster=NULL){
 		?>
 			<div class="poster-sidebar">
-				<img src="<?=$poster?>" alt="">
+				<img src="<?php echo $poster; ?>" alt="">
 			</div>
 			<div class="list-items">
 				<?php 
@@ -92,7 +93,7 @@ class Render
 		}
 		$breadcrumbs[] 	= array(
 			'category' 	=> $id,
-		 	'link'		=> NULL,
+		 	'link'		=> NULL, // current item is not a link
 		 	'name'		=> $name
 		 );
 
@@ -141,10 +142,25 @@ class Render
 	}
 
 	public static function make_link($kind, $id){
-		// if the $id is 0, it automatically take us home
+		
+		/*This creates links for use throughout the site*/
+
+		// First, Handle exceptions
+
+		// Exception 1: If Category is 0, go to home page
 		if ($id == 0) {
 			return WEBPATH.'.';
 		}
+
+		// Exception 2: If Category is an exception (i.e has a static page) 
+		if ($kind == 'category') {
+			$details = Products::get_category_details($id);
+			if ($details->cat_special) {
+				return  WEBPATH.'collection/special/'.$details->cat_special.'.php';
+			}
+		}
+
+		// If not an exception, handle normally 
 		switch ($kind) {
 			case 'category':
 				$url = WEBPATH.'collection/?cat='.$id;

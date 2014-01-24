@@ -159,7 +159,16 @@ class Products
 		/* This class takes an id and produces a thumbnail's url. 
 		It does so by randomly drilling down the categories untill it arrives at a product*/
 		
-		// echo 'drilling-down '.$id.' > <br>'; // <- uncomment to debug
+
+		// first, handle exception, special categories like light and worksations that don't have pages.
+
+		if ($kind == 'category') {
+			$details = Products::get_category_details($id);
+			if ($details->cat_special) {
+				return  WEBPATH.'images/products/special/'.$details->cat_special.'.jpg';
+			}
+		}
+
 		switch ($kind) {
 			case 'product':
 				# code...
@@ -177,6 +186,101 @@ class Products
 
 				break;
 		}
+	}
+
+	public static function product_collection($id){
+		$connection = DB::getInstance();
+		$result = $connection->query('SELECT * FROM Products WHERE Prod_ID = "'.$id.'" AND Collection_Name IS NOT NULL')->results();
+		if (count($result)>0) {
+			return $result[0];
+		}else{
+			return NULL;
+		}
+	}
+
+	public static function get_collection($Collection_Name){
+		/* Will return all products that have the collection collection name*/
+		$connection = DB::getInstance();
+		$products = $connection->query('SELECT * FROM Products WHERE Collection_Name = "'.$Collection_Name.'"')->results();
+		return $products;	
+	}
+
+	public static function get_product_siblings($id, $howmany=5){
+		$dad = self::get_parent('product', $id);
+
+		//$siblings is an array with all products
+		$siblings = self::get_descendants($dad);
+		
+		// clean up to only show products with stock
+		$new_siblings = array();
+		foreach ($siblings as $key => $sibling) {
+			if (self::product_has_stock($sibling->Prod_ID)) {
+				$new_siblings[]=$sibling;
+			}
+		}
+
+		// slice array to return wanted amount only
+		$siblings = array_slice($new_siblings, 0, $howmany);
+		return $siblings;
+	}
+
+	public static function get_related_products($id){
+		#code
+	}
+
+	public static function get_product_grandpa($productID){
+		$grandpaCat = self::get_parent('category',self::get_parent('product',$productID));
+		$grandpaName = self::get_category_details($grandpaCat)->cat_name;
+		$grandpa = array(
+			'category'	=>	$grandpaCat,
+			'name'		=>	$grandpaName
+			);
+		return $grandpa;
+	}
+	public static function get_uncle_categories($productID, $howmany=5){
+		$grandpa = self::get_product_grandpa($productID);
+		$grandpaCat = $grandpa['category'];
+		$uncles = self::get_descendants($grandpaCat);
+		$uncles = array_slice($uncles, 0, $howmany);
+		return $uncles;
+	}
+
+	public static function convert_to_items($kind, $data){
+		/*This function takes raw data as returned by functions here 
+		and converts them to the format used by the grid layout,
+		IE array items[]['name'] , ['thumb'], ['link'], ['description']*/
+
+		if ($kind == 'category') {
+			$type = 'category';
+			$thekey = 'cat_id';
+			$name = 'cat_name';
+			$description= 'cat_description';
+		} else {
+			$type = 'product';
+			$thekey = 'Prod_ID';
+			$name = 'Prod_Name';
+			$description= 'Prod_Description';
+		}
+
+		/* Collect descendent details, to use for rendering */
+		$items = array();
+		$count = 0;
+		foreach ($data as $key => $item) {
+			//Skip Products that don't have stock
+			if ($kind == 'product') {
+				if (!self::product_has_stock($item->$thekey)) {
+					//ignore products that don't have stock
+					continue;
+				}
+			}
+
+			$items[$count]['name'] =  $item->$name;
+			$items[$count]['thumb'] = self::get_thumb($kind, $item->$thekey);
+			$items[$count]['link'] = Render::make_link($kind, $item->$thekey);
+			$items[$count]['description'] = $item->$description;
+			$count +=1;
+		}
+		return $items;
 	}
 
 }

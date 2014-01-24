@@ -14,10 +14,10 @@ include_once(ABSPATH.'views/header.php');
 				<div class="slide"><a href=""><img src="<?php echo WEBPATH.'images/slideshow/';?>824x347-interstuhl-seating-knowledge.jpg" width ="824" height="347" alt="blue gallery slide"></a></div>
 			</div>
 			<div id="feat1">
-				<img src="<?php echo WEBPATH.'images/slideshow/';?>173x173-the-airpad.jpg" alt="feature 1">
+				<a href="<?php echo WEBPATH.'collection/?prod=513' ?>"><img src="<?php echo WEBPATH.'images/slideshow/';?>173x173-the-airpad.jpg" alt="feature 1"></a>
 			</div>
 			<div id="feat2">
-				<img src="<?php echo WEBPATH.'images/slideshow/';?>173x173-potomanto.jpg" alt="feature 1">
+				<a href="<?php echo WEBPATH.'special/potomanto.php' ?>"><img src="<?php echo WEBPATH.'images/slideshow/';?>173x173-potomanto.jpg" alt="feature 1"></a>
 			</div>
 		</div>
 
@@ -85,10 +85,10 @@ include_once(ABSPATH.'views/header.php');
 					<a href=""><div class="new-items-feature"><img src="<?php echo WEBPATH.'images/posters/230x142_carpets.jpg' ?>" alt="Carpets and Rugs"></a></div>
 				</div>
 				<div class="fourth">
-					<a href=""><div class="new-items-feature"><img src="<?php echo WEBPATH.'images/posters/230x142_lights.jpg' ?>" alt="Lights and Fixtures"></a></div>
+					<a href=""><div class="new-items-feature"><img src="<?php echo WEBPATH.'images/posters/230x142_our_showroom.jpg' ?>" alt="Find our showroom"></a></div>
 				</div>
 				<div class="fourth last">
-					<a href=""><div class="new-items-feature"><img src="<?php echo WEBPATH.'images/posters/230x142_our_showroom.jpg' ?>" alt="Find our showroom"></a></div>
+					<!-- Nothing -->
 				</div>
 			</div>
 		</div>

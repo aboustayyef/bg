@@ -10,7 +10,12 @@
 
 require_once('init.php');
 
-$all_items = array();
+echo "<pre>";
+$collection = Products::get_collection('Jamaica');
+print_r($collection);
+echo "</pre>";
+
+/*$all_items = array();
 $start_index = 0;
 
 $connection = DB::getInstance();
@@ -20,11 +25,8 @@ foreach ($level1 as $key => $category) {
 	$level2 = Products::get_descendants($category);
 	$all_items[$category] = $level2;
 }
-
+*/
 ?>
-<pre>
-	<?php var_dump($all_items) ?>
-</pre>
 
 </body>
 </html>

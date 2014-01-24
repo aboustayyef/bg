@@ -3,27 +3,26 @@
 			<div class ="footer-col-1">
 				<div class ="floater">
 					<img src="<?php echo WEBPATH.'images/interface/gmaps-icon.gif' ?>" alt="google maps icon">
-					<p>Click <a href="">here</a> for a google map to our location in Tema</p>
+					<p>Click <a href="<?php echo WEBPATH.'map.php' ?>">here</a> for a google map to our location in Tema</p>
 				</div>
-				<hr>
-				<p>Call us on: +233 303 300 121</p><p> Our Tema showroom is our only showroom in Ghana.</p>
+				<p><i class="fa fa-phone"></i> Call us on: +233 303 300 121</p><p class="warning"><i class="fa fa-warning"></i> Our Tema showroom is our only showroom in Ghana.</p>
 			</div>
 			<div class ="footer-col-2">
 				<ul>
-					<li>Home</li>
-					<li>About</li>
-					<li>Projects</li>
-					<li>Contact Us</li>
-					<li>Locate Us</li>
+					<li><a href="<?php echo WEBPATH.'.' ?>">Home</a></li>
+					<li><a href="<?php echo WEBPATH.'about.php' ?>">About</a></li>
+					<li><a href="<?php echo WEBPATH.'projects.php' ?>">Projects</a></li>
+					<li><a href="<?php echo WEBPATH.'contact.php' ?>">Contact Us</a></li>
+					<li><a href="<?php echo WEBPATH.'map.php' ?>">Locate Us</a></li>
 				</ul>
 			</div>
 			<div class ="footer-col-3">
 				<ul>
-					<li>Living Room</li>
-					<li>Dining Room</li>
-					<li>Bedroom</li>
-					<li>Accessories</li>
-					<li>Office Furniture</li>
+					<li><a href="<?php echo WEBPATH.'/collection/?cat=101' ?>">Living Room</a></li>
+					<li><a href="<?php echo WEBPATH.'/collection/?cat=102' ?>">Dining Room</a></li>
+					<li><a href="<?php echo WEBPATH.'/collection/?cat=103' ?>">Bedroom</a></li>
+					<li><a href="<?php echo WEBPATH.'/collection/?cat=104' ?>">Accessories</a></li>
+					<li><a href="<?php echo WEBPATH.'/collection/?cat=105' ?>">Office Furniture</a></li>
 				</ul>
 			</div>
 			<div class ="footer-col-4">
@@ -32,7 +31,7 @@
 					<p>Blue Gallery™ and the Blue Gallery logo are trademarks of Tarzan Ent. Ltd</p>
 				</div>
 				<hr>
-				<p>Website designed, developed, built and maintained by Mustapha Hamoui in 2012</p>
+				<p>Website designed, developed, built and maintained by Mustapha Hamoui</p>
 				<p><a href="">Admin Login</a></p>
 			</div>
 		</div>
@@ -54,7 +53,11 @@ if (isset($product)) { //we're in the products page
 		<script type="text/javascript" src="<?php echo WEBPATH.'js/products.js' ?>"></script>
 	<?php
 }
-
+if ($page = 'contact') { // we're in the contact us page
+	?>
+		<script type="text/javascript" src="<?php echo WEBPATH.'js/contact.js' ?>"></script>
+	<?php
+}
 ?>
 
 <!-- Stats -->

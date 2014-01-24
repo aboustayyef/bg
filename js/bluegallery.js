@@ -94,7 +94,7 @@ $(document).ready(function(){
 
 $(window).load(function(){
 	BG_APP.slideshow.init();
-})
+});
 
 var do_resize;
 $(window).resize(function() {
