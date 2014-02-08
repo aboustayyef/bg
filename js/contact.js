@@ -46,3 +46,7 @@ CONTACT = {
 
 	}
 };
+
+$(document).ready(function(){
+	CONTACT.init();
+});
