@@ -79,13 +79,13 @@ include_once(ABSPATH.'views/header.php');
 		<div class="outer-row">
 			<div class="inner-row">
 				<div class="fourth">
-					<a href=""><div class="new-items-feature"><img src="<?php echo WEBPATH.'images/posters/230x142_artificial_flowers.jpg' ?>" alt="Artificial Flowers"></a></div>
+					<a href="<?php echo Render::make_link('category',254); ?>"><div class="new-items-feature"><img src="<?php echo WEBPATH.'images/posters/230x142_artificial_flowers.jpg' ?>" alt="Artificial Flowers"></a></div>
 				</div>
 				<div class="fourth">
-					<a href=""><div class="new-items-feature"><img src="<?php echo WEBPATH.'images/posters/230x142_carpets.jpg' ?>" alt="Carpets and Rugs"></a></div>
+					<a href="<?php echo Render::make_link('category',253); ?>"><div class="new-items-feature"><img src="<?php echo WEBPATH.'images/posters/230x142_carpets.jpg' ?>" alt="Carpets and Rugs"></a></div>
 				</div>
 				<div class="fourth">
-					<a href=""><div class="new-items-feature"><img src="<?php echo WEBPATH.'images/posters/230x142_our_showroom.jpg' ?>" alt="Find our showroom"></a></div>
+					<a href="<?php echo WEBPATH.'map.php' ?>"><div class="new-items-feature"><img src="<?php echo WEBPATH.'images/posters/230x142_our_showroom.jpg' ?>" alt="Find our showroom"></a></div>
 				</div>
 				<div class="fourth last">
 					<!-- Nothing -->
