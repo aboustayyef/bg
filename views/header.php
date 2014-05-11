@@ -35,7 +35,12 @@
 					<li><div class="fb-like" data-href="https://www.facebook.com/blue.gallery.ghana" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div></li>
 					<a href="http://twitter.com/blue_gallery"><li><i class="fa fa-twitter-square"></i></li></a>
 					<a href="http://pinterest.com/bluegallery/"><li><i class="fa fa-pinterest-square"></i></li></a>
-					<li><form action=""><input type="search" placeholder="search our collection"></form></li>
+					<li>
+						<form id="searchForm" method="get" action="http://google.com/search">
+							<input type="hidden" name="sitesearch" value="http://bluegallery.com.gh/">
+							<input type="search" id="s" name="q" placeholder="Search our collection">
+						</form>
+					</li>
 				</ul>
 			
 			</div>
