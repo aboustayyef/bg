@@ -65,7 +65,7 @@ if ($category_details->cat_parent_id == 0) {
 
 <div class="outer-row">
 	<div class="inner-row">
-		<p>For inquiries about furniture prices and vailability, <a href="/contact.php">contact</a> our sales department</p>
+		<p>For inquiries about furniture prices and availability, <a href="/contact.php">contact</a> our sales department</p>
 	</div>
 </div>
 
