@@ -48,6 +48,12 @@ include_once(ABSPATH.'views/header.php');
 
 <div class="outer-row">
 	<div class="inner-row">
+		<p><b>Note:</b> Not all products listed are currently available in stock</p>
+	</div>
+</div>
+
+<div class="outer-row">
+	<div class="inner-row">
 <?php
 
 /* If this is a room , use the list view. Otherwise, use the gird view */

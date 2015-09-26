@@ -36,6 +36,11 @@ include_once(ABSPATH.'views/header.php');
 	</div>
 </div>
 
+<div class="outer-row">
+	<div class="inner-row">
+		<p><b>Note:</b> Not all products listed are currently available in stock</p>
+	</div>
+</div>
 
 <!-- details -->
 <div class="outer-row">
