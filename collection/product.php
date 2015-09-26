@@ -36,12 +36,6 @@ include_once(ABSPATH.'views/header.php');
 	</div>
 </div>
 
-<div class="outer-row">
-	<div class="inner-row">
-		<p><b>Note:</b> Not all products listed are currently available in stock</p>
-	</div>
-</div>
-
 <!-- details -->
 <div class="outer-row">
 	<div class="inner-row">
@@ -78,8 +72,10 @@ include_once(ABSPATH.'views/header.php');
 		echo '<p class ="product-description">'.$variant_description.'</p>';
 		echo '<h2>Technical Details</h2>';
 		echo '<p class ="product-technical-details">'.$variant_technical.'</p>';
-
+		echo '<h2>Availability and Pricing</h2>';
+		echo '<p class="product-technical-details">For inquiries about prices and availability, <a href="/contact.php">contact</a> our sales department</p>';
 		?>			
+
 		</div>
 
 	</div>
