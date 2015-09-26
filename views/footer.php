@@ -5,7 +5,7 @@
 					<img src="<?php echo WEBPATH.'images/interface/gmaps-icon.gif' ?>" alt="google maps icon">
 					<p>Click <a href="<?php echo WEBPATH.'map.php' ?>">here</a> for a google map to our location in Tema</p>
 				</div>
-				<p><i class="fa fa-phone"></i> Call us on: +233 303 300 121</p><p class="warning"><i class="fa fa-warning"></i> Our Tema showroom is our only showroom in Ghana.</p>
+				<p><i class="fa fa-phone"></i> Call us on: +233 303 300 121</p>
 			</div>
 			<div class ="footer-col-2">
 				<ul>
