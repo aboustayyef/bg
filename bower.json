@@ -1,0 +1,28 @@
+{
+  "name": "blue gallery",
+  "homepage": "https://github.com/aboustayyef/bg",
+  "authors": [
+    "Mustapha Hamoui <mustapha.hamoui@gmail.com>"
+  ],
+  "description": "ghana's top destination for premium home and office furniture",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "ghana",
+    "furniture",
+    "home",
+    "office"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fullpage.js": "~2.7.6"
+  }
+}
