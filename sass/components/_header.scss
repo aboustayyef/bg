@@ -1,0 +1,15 @@
+#header{
+	position:fixed;
+	top:0;
+	z-index:10000;
+	background:white;
+	width:100%;
+	padding:10px;
+}
+.header__logo{
+	width: 250px;
+	min-height: 57px;
+	background: url("../img/bg_logo.png") no-repeat;
+	background-repeat: no-repeat;
+	background-size: 250px 57px;
+}

@@ -1,0 +1,15 @@
+.bgFeatures{
+	overflow:auto;
+	width:100%;
+	max-width: 880px;
+	margin:auto;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+}
+.bgFeature{
+	width:280px;
+	@media all and (max-width:450px){
+		width: calc(100% - 20px);
+	}
+}
