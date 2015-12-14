@@ -23,6 +23,8 @@
     "tests"
   ],
   "dependencies": {
-    "fullpage.js": "~2.7.6"
+    "fullpage.js": "~2.7.6",
+    "bourbon": "~4.2.6",
+    "HTML5-Reset": "~2.1.3"
   }
 }

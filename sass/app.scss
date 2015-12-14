@@ -1,7 +1,19 @@
+// box sizing
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// bourbon
+@import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+
 // preexisting css for fullpage.js
 @import "../bower_components/fullpage.js/jquery.fullpage";
 
 // app
+@import "components/variables";
 @import "components/header";
 @import "components/slides";
 @import "components/features";
+@import "components/typography";

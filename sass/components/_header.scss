@@ -2,9 +2,19 @@
 	position:fixed;
 	top:0;
 	z-index:10000;
-	background:white;
+	background-color:$bgBackgroundColor;
 	width:100%;
-	padding:10px;
+	padding:0 10px;
+}
+.header__wrapper{
+	overflow:auto;
+	max-width:$bgMaxWidth;
+	background-color:white;
+	margin:0 auto;
+}
+.header__inner{
+	max-width:$bgContentMaxWidth;
+	margin:0 auto;
 }
 .header__logo{
 	width: 250px;

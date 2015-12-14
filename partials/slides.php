@@ -1,8 +1,10 @@
-<div class="slideShroud"></div>
-
-<div class="slide">
-	<img data-src="/img/slides/int1.jpg" width="100%" height="auto" style="min-width:1280px" alt="">
+<div class="slideshow__wrapper">
+	<div class="slideshow">
+		<div class="slideshow__overlay">
+			<h2>Modern, Tasteful &amp; Long-lasting</h2>
+			<p>Blue Gallery is Ghana's top destination for premium home and office furniture</p>		
+		</div>
+		<div class="slideshow__slides" style="background-image: url(../img/slides/0.jpg);">
+		</div>
+	</div>
 </div>
-<div class="slide"><img data-src="http://placehold.it/1280x600" width="100%" height="auto" style="min-width:1280px" alt=""></div>
-<div class="slide"><img data-src="http://placehold.it/1280x600" width="100%" height="auto" style="min-width:1280px" alt=""></div>
-<div class="slide"><img data-src="http://placehold.it/1280x600" width="100%" height="auto" style="min-width:1280px" alt=""></div>	    		   	

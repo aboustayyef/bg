@@ -1,14 +1,14 @@
 .bgFeatures{
 	overflow:auto;
 	width:100%;
-	max-width: 880px;
+	max-width: $bgContentMaxWidth;
 	margin:auto;
 	display:flex;
 	justify-content:space-around;
 	flex-wrap:wrap;
 }
 .bgFeature{
-	width:280px;
+	width:($bgContentMaxWidth - 40) / 3;
 	@media all and (max-width:450px){
 		width: calc(100% - 20px);
 	}
