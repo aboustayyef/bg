@@ -1,10 +1,11 @@
-.bgFeatures{
-	overflow:auto;
-	width:100%;
-	max-width: $bgContentMaxWidth;
-	margin:auto;
+.bgFeatures__outer{
+	margin:0 auto;
+	background-color:white;
+}
+.bgFeatures__inner{
+	background-color:white;
 	display:flex;
-	justify-content:space-around;
+	justify-content:space-between;
 	flex-wrap:wrap;
 }
 .bgFeature{

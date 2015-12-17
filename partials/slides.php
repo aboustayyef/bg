@@ -1,10 +1,10 @@
 <div class="slideshow__wrapper">
-	<div class="slideshow">
-		<div class="slideshow__overlay">
-			<h2>Modern, Tasteful &amp; Long-lasting</h2>
-			<p>Blue Gallery is Ghana's top destination for premium home and office furniture</p>		
+	<div class="slideshow__slides" style="background-image: url(../img/slides/0.jpg);">
+	<div class="slideshow__overlay">
+		<div class="slideshow__inner bginner">
+			<h2 class="slideshow__header">Modern, Tasteful &amp; Long-lasting</h2>
+			<p class="slideshow__text">Blue Gallery is Ghana's top destination for premium home and office furniture</p>		
 		</div>
-		<div class="slideshow__slides" style="background-image: url(../img/slides/0.jpg);">
-		</div>
+	</div>
 	</div>
 </div>

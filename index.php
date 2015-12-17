@@ -9,24 +9,32 @@
 <body>
 	
 	<header id="header">
-		<div class="header__wrapper">
-			<div class="header__inner">
-				<h1 class="header__logo" title="Welcome To Blue Gallery"></h1>
-			</div>
-		</div>	
+		<?php include_once($path . '/partials/header.php'); ?>	
 	</header>
 
 	<div id="fullpage">
-	    <div id="home" class="section fp-auto-height">
+	    
+	    <div id="home" class="section fp-auto-height bgSection">
 			<?php include_once($path . '/partials/slides.php'); ?>
 			<?php include_once($path . '/partials/features.php') ?>
 		</div>
-		
-	    <div id ="brands" class="section" style="background-color:#ededed">
-			<p>Brands; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore ad voluptatum iste perspiciatis adipisci, maxime, necessitatibus sit. Doloribus nisi quia deserunt nobis, sunt repellendus incidunt facilis, asperiores. Saepe, ab pariatur! Consectetur ratione id natus omnis alias et animi numquam? Iure earum, consectetur molestias eveniet voluptate alias, ex hic eos!</p>
+	    
+	    <div id="collection" class="section bgSection">
+		    <?php include_once($path . '/partials/collection.php'); ?>
 	    </div>
-	    <div class="section">Some section</div>
-	    <div class="section">Some section</div>
+	    
+	    <div id ="brands" class="section bgSection">
+	    	<?php include_once($path . '/partials/brands.php'); ?>
+	    </div>
+	    
+	    <div id="projects" class="section bgSection">
+	    	<h3>Projects</h3>
+	    </div>
+
+	    <div id="contact" class="section bgSection">
+	    	<h3>Contact Us</h3>
+	    </div>
+
 	</div>
 	<script src="js/min/app-min.js"></script>
 </body>

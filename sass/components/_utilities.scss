@@ -1,0 +1,14 @@
+.bginner{
+	max-width:$bgContentMaxWidth;
+	margin:0 auto;
+	@media all and (max-width : $bgContentMaxWidth){
+		padding:0 20px;
+	}
+}
+
+.bgSection{
+	width:100%;
+	max-width:$bgMaxWidth;
+	margin:0 auto;
+	background:white;
+}

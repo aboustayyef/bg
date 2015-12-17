@@ -1,10 +1,12 @@
 $(document).ready(function(){
 	$('#fullpage').fullpage(
 	{
+		anchors:['home', 'collection', 'brands', 'projects', 'contact'],
+		menu:'#lbmenu',
 		controlArrows:true,
 		keyboardScrolling: true,
-		fitToSection:false,
-		autoScrolling:false
+		fitToSection:true,
+		autoScrolling:false,
 	}
 	);
 });
