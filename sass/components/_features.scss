@@ -9,8 +9,14 @@
 	flex-wrap:wrap;
 }
 .bgFeature{
-	width:($bgContentMaxWidth - 40) / 3;
+	width:calc(33.33333333% - 13.3333333333333px);
+	@media all and (max-width:768px){
+		width: calc(50% - 15px);
+	}
 	@media all and (max-width:450px){
 		width: calc(100% - 20px);
+	}
+	img{
+		max-width:100%;
 	}
 }

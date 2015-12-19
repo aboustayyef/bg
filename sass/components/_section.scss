@@ -3,5 +3,12 @@
 }
 
 .bgSection{
+	border-top:10px solid #ededed;
+	padding:100px 0;
+}
 
+.bgSection--notop{
+	margin-top:0;
+	padding-top:0;
+	border-top:none;
 }

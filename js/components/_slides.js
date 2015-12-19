@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
 	bgSlides = {
 		position: 0,
 		count: 4,

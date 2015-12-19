@@ -14,12 +14,12 @@
 
 	<div id="fullpage">
 	    
-	    <div id="home" class="section fp-auto-height bgSection">
+	    <div id="home" class="section bgSection bgSection--notop">
 			<?php include_once($path . '/partials/slides.php'); ?>
 			<?php include_once($path . '/partials/features.php') ?>
 		</div>
 	    
-	    <div id="collection" class="section bgSection">
+	    <div id="lb_collection" class="section bgSection">
 		    <?php include_once($path . '/partials/collection.php'); ?>
 	    </div>
 	    
