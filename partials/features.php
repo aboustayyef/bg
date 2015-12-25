@@ -1,5 +1,5 @@
 <div class="bgFeatures__outer">
-	<div class="bgFeatures__inner bginner">
+	<div class="bgFeatures__inner layout__inner">
 		<div class="bgFeature">
 			<h2>Modern</h2>
 			<p>Twenty first century designs and trends using the latest technologies in execution and materials</p>

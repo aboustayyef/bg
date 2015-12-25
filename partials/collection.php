@@ -1,6 +1,6 @@
-<h2 class="bginner">Our Collection</h2>
+<h2 class="layout__inner">Our Collection</h2>
 
-<div class="bgFeatures__inner bginner">
+<div class="bgFeatures__inner layout__inner">
 	<div class="bgFeature">
 		<h4>Home Furniture</h4>
 		<img src="http://placehold.it/400x300" alt="">
