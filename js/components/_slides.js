@@ -1,21 +1,11 @@
 $(document).ready(function(){
-	bgSlides = {
-		position: 0,
-		count: 4,
-		$container: $('.slideshow__slides'),
-		
-		change: function(){
-			var nextPosition = ((this.position) + 1 ) % this.count;
-			this.$container.css('background-image', 'url(../img/slides/' + nextPosition + '.jpg)');
-			this.position = nextPosition;
-		}
-	}
-
-
-	// Change image every five seconds
-
-	window.setInterval(function(){
-	  bgSlides.change()
-	}, 5000);
-
+	$(".slideshow__slides").backstretch([
+	    "../img/slides/0.jpg",
+	    "../img/slides/1.jpg",
+	    "../img/slides/2.jpg",
+	    "../img/slides/3.jpg"    
+	  ], {
+	  	duration: 4000,
+	  	fade: 750
+	  });
 });

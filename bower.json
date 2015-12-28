@@ -26,6 +26,7 @@
     "fullpage.js": "~2.7.6",
     "HTML5-Reset": "~2.1.3",
     "pure": "~0.6.0",
-    "bourbon": "~4.2.6"
+    "bourbon": "~4.2.6",
+    "jquery-backstretch": "~2.0.4"
   }
 }
