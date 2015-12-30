@@ -1,3 +1,6 @@
+body{
+	padding-top:100px; // to account for fixed header element..
+}
 .layout__inner{
 	max-width:$bgContentMaxWidth;
 	margin:0 auto;

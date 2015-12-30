@@ -1,22 +1,21 @@
-<h2 class="layout__inner">Our Collection</h2>
-
-<div class="bgFeatures__inner layout__inner">
-	<div class="bgFeature">
-		<h4>Home Furniture</h4>
-		<img src="http://placehold.it/400x300" alt="">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ullam, ducimus doloribus repellendus laborum voluptas atque expedita iure nobis, magni tenetur fugit, officiis dolorum consectetur. At ex blanditiis earum, voluptatem!		
+<div class="container-fluid layout__inner">
+	<div class="col-md-12">
+		<h2>Our Collection</h2>
 	</div>
-	
-	<div class="bgFeature">
-		<h4>Office Furniture</h4>
-		<img src="http://placehold.it/400x300" alt="">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ullam itaque, exercitationem cumque illo pariatur sit asperiores ad vero quaerat.
+	<div class="col-md-4">
+		<h3 class="bgCollection__h3">Home Furniture</h3>
+		<img class="bgCollection__image" src="/img/collection_ditre.jpg" alt="">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error earum quaerat beatae expedita! Inventore, ipsa quos dignissimos saepe neque! Perferendis.</p>
 	</div>
-	
-	<div class="bgFeature">
-		<h4>Accessories</h4>
-		<img src="http://placehold.it/400x300" alt="">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ullam itaque, exercitationem cumque illo pariatur sit asperiores ad vero quaerat.
+	<div class="col-md-4">
+		<h3 class="bgCollection__h3">Office Furniture</h3>
+		<img class="bgCollection__image" src="/img/collection_interstuhl.jpg" alt="">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit fugit porro, molestias mollitia neque, ea quasi. Rem porro magnam voluptatem?</p>
 	</div>
-
+	<div class="col-md-4">
+		<h3 class="bgCollection__h3">Accessories</h3>
+		<img class="bgCollection__image" src="http://placehold.it/400x300" alt="">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias cum non id, pariatur beatae eius nostrum aliquid dolor iure tempore.</p>
+	</div>
 </div>
+	

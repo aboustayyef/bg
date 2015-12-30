@@ -9,6 +9,7 @@ body{
 	top:0;
 	z-index:10000;
 	width:100%;
+	border-bottom:1px solid #E6E6E6;
 }
 .header__wrapper{
 	overflow:auto;
@@ -21,7 +22,7 @@ body{
 }
 .header__logo{
 	width: 250px;
-	min-height: 57px;
+	min-height: 56px;
 	background: url("../img/bg_logo.png") no-repeat;
 	background-repeat: no-repeat;
 	background-size: 250px 57px;

@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Test</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
@@ -28,7 +29,7 @@
 	    </div>
 	    
 	    <div id="projects" class="section bgSection">
-	    	<h3>Projects</h3>
+	    	<?php include_once($path . '/partials/projects.php'); ?>
 	    </div>
 
 	    <div id="contact" class="section bgSection">

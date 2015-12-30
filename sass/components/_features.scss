@@ -2,21 +2,7 @@
 	margin:0 auto;
 	background-color:white;
 }
-.bgFeatures__inner{
-	background-color:white;
-	display:flex;
-	justify-content:space-between;
-	flex-wrap:wrap;
-}
-.bgFeature{
-	width:calc(33.33333333% - 13.3333333333333px);
-	@media all and (max-width:768px){
-		width: calc(50% - 15px);
-	}
-	@media all and (max-width:450px){
-		width: calc(100% - 20px);
-	}
-	img{
-		max-width:100%;
-	}
+
+.bgFeature__h3{
+	@include colored_h3();
 }

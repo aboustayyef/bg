@@ -14,6 +14,7 @@ $(document).ready(function(){
 		
 		if ($(this).outerHeight() < $desiredPageHeight) {
 			$(this).outerHeight($desiredPageHeight);
+			$(this).addClass('utility__verticenter');
 		};
 	});
 

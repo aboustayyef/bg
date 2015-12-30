@@ -2,9 +2,12 @@
 	display:inline-block;
 	&.active{
 		.navigation__item{
-			border-bottom: 5px solid black;	
+			color:silver;	
 		}
-		
+		.navigation--highlight{
+			color:white;
+			border-bottom:none;
+		}		
 	}
 }
 .navigation{
@@ -26,7 +29,7 @@
 	color:#444;
 	padding:5px 10px;
 	&:hover{
-		border-bottom: 5px solid black;	
+		color:silver;	
 	}
 }
 
@@ -36,7 +39,7 @@
 	border-radius:10px;
 	padding:10px 25px;
 	&:hover{
-		border-bottom:none;
+		color:white;
 		background:darken($bgMainColor, 10);
 	}
 }

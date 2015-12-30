@@ -1,11 +1,18 @@
 $(document).ready(function(){
-	$(".slideshow__slides").backstretch([
-	    "../img/slides/0.jpg",
-	    "../img/slides/1.jpg",
-	    "../img/slides/2.jpg",
-	    "../img/slides/3.jpg"    
-	  ], {
+	var allSlides = [
+		"../img/slides/eidos_evo_42_43.jpg",
+		"../img/slides/tower_evo_22_23.jpg",
+		"../img/slides/vista_74_75.jpg"
+	];
+
+	// Slideshow at top
+	$(".slideshow__slides").backstretch(
+		allSlides, {
 	  	duration: 4000,
 	  	fade: 750
 	  });
+
+	// Projects Section
+	$('#projects').backstretch('../img/projects_background.jpg');
+
 });
