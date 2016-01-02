@@ -772,6 +772,22 @@ body {
       width: 125px;
       background-size: 155px auto; } }
 
+.navigation__mobile_toggle {
+  font-size: 20px;
+  background: silver;
+  display: inline-block;
+  line-height: 10px;
+  height: 40px;
+  padding: 15px;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  cursor: pointer;
+  display: none; }
+  .navigation__mobile_toggle:hover {
+    color: white;
+    background: #8d8d8d; }
+
 .navigation {
   width: calc(100% - 350px);
   display: flex;
@@ -809,6 +825,9 @@ body {
     background: #1a4ad8; }
 
 @media screen and (max-width: 850px) {
+  .navigation__mobile_toggle {
+    display: block; }
+
   .navigation {
     width: 100%;
     display: block;

@@ -6,7 +6,12 @@
  */
 
 $(document).ready(function(){
+
 	var linkSelector = '.navigation__link';
+
+	/*
+		manage internal section browsing
+	 */
 
 	$(linkSelector).on('click',function(e){
 
@@ -30,5 +35,13 @@ $(document).ready(function(){
 		}, 500);
 
 	});
+
+	/*
+		Toggle Mobile Menu
+	 */
+
+	 $('.navigation__mobile_toggle').on('click', function(){
+	 	$('nav').toggleClass('active');
+	 });
 
 });

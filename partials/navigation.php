@@ -7,3 +7,4 @@
 				<li data-menuanchor="contact" class="navigation__link"><a class="navigation__item navigation--highlight" href="#contact">Contact Us</a></li>
 			</ul>
 </nav>
+<div class="navigation__mobile_toggle">Menu</div>
