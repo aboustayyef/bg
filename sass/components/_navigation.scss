@@ -1,3 +1,11 @@
+.navigation{
+	width: calc(100% - 350px);
+	display:flex;
+	flex-direction:column;
+	align-self:center;
+	flex-basis:450px;
+}
+
 .navigation__link{
 	display:inline-block;
 	&.active{
@@ -9,13 +17,6 @@
 			border-bottom:none;
 		}		
 	}
-}
-.navigation{
-	width: calc(100% - 350px);
-	display:flex;
-	flex-direction:column;
-	align-self:center;
-	flex-basis:450px;
 }
 
 .navigation__list{

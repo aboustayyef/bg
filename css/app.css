@@ -767,6 +767,17 @@ body {
   background-repeat: no-repeat;
   background-size: 250px 57px;
   flex-basis: 300px; }
+  @media all and (max-width: 400px) {
+    .header__logo {
+      width: 125px;
+      background-size: 155px auto; } }
+
+.navigation {
+  width: calc(100% - 350px);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  flex-basis: 450px; }
 
 .navigation__link {
   display: inline-block; }
@@ -775,13 +786,6 @@ body {
   .navigation__link.active .navigation--highlight {
     color: white;
     border-bottom: none; }
-
-.navigation {
-  width: calc(100% - 350px);
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  flex-basis: 450px; }
 
 .navigation__list {
   display: flex;
@@ -804,6 +808,50 @@ body {
     color: white;
     background: #1a4ad8; }
 
+@media screen and (max-width: 850px) {
+  .navigation {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: -2000px;
+    right: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+    .navigation.active {
+      transform: translate3d(2000px, 0, 0); }
+
+  .navigation__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: flex-start; }
+
+  .navigation__item {
+    text-decoration: none;
+    color: #444; }
+    .navigation__item:hover {
+      color: #3D68E8; }
+
+  .navigation__link {
+    width: 100%;
+    padding: 10px;
+    background: #ededed;
+    border-bottom: 1px solid silver;
+    display: inline-block; }
+    .navigation__link.active .navigation__item {
+      color: #3D68E8; }
+    .navigation__link.active .navigation--highlight {
+      color: #3D68E8;
+      border-bottom: none; }
+
+  .navigation--highlight {
+    background: inherit;
+    padding: inherit; }
+    .navigation--highlight:hover {
+      background: inherit;
+      color: #3D68E8; } }
 .slideshow__wrapper {
   width: 100%;
   min-height: 980px;
@@ -855,12 +903,6 @@ body {
   font-family: "Lato";
   line-height: 1.8; }
 
-#brands {
-  background-color: #3D68E8; }
-
-#projects {
-  background-color: gold; }
-
 #contact {
   background-color: pink; }
 
@@ -878,9 +920,6 @@ body {
 
 .projects__info {
   color: #1D1D1D;
-  width: 33%;
-  max-width: 450px;
-  min-width: 280px;
   padding: 20px 40px;
   background: #B5B5B5;
   border: 1px solid black; }
@@ -888,6 +927,9 @@ body {
 .projects__h2 {
   color: #0A33AD;
   text-transform: uppercase; }
+
+.bgCollection__image {
+  max-width: 100%; }
 
 .bgCollection__h3 {
   color: #98aff3;
