@@ -9,7 +9,7 @@ $(document).ready(function(){
 	$(".slideshow__slides").backstretch(
 		allSlides, {
 	  	duration: 4000,
-	  	fade: 750
+	  	fade: 950
 	  });
 
 	// Projects Section
