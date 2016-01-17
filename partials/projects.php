@@ -1,5 +1,5 @@
-
-<div class="container-fluid">
+<div class="layout__inner">
+	<div class="container-fluid">
 	<div class="col-sm-6">
 		<div class="projects__info">
 			<h2 class="projects__h2">Let Us Help You</h2>
@@ -11,4 +11,9 @@
 			<p class ="projects__p">With our expertise as well as valuable trade sources, we make sure to design a space that reflects your company's brand, mission and values.</p>
 		</div>		
 	</div>
+	<div class="col-sm-6">
+		<img src="http://placehold.it/600x400" alt="">
+	</div>
+</div>
+
 </div>

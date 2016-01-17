@@ -9,13 +9,23 @@ $(document).ready(function(){
 
 	var linkSelector = '.navigation__link';
 
-	var activateSection = function(section){
+	var goToSection = function(sectionName){
 		
+		// first, activate menu item:
+
 		// remove active state from other menu item
 		$(linkSelector+'.active').removeClass('active');	
 
 		// make clicked on item active
-		section.addClass('active');
+		$('[menuanchor="' + sectionName + '"]').addClass('active');
+
+		// now slide to wanted section;
+		var $headerHeight = $('#header').outerHeight();
+		var $targetTop = $('#'+sectionName).offset().top - $headerHeight;
+
+		$('html, body').animate({
+		        scrollTop: $targetTop
+		}, 500);
 	}
 
 	/*
@@ -27,22 +37,23 @@ $(document).ready(function(){
 		// prevent default action
 		e.preventDefault();
 
-		activateSection($(this));
+		var sectionName = $(this).attr('menuanchor');
 
-		// jump page down a bit to accomodate fixed header
-
-		var $headerHeight = $('#header').outerHeight();
-		var $targetTop = $($(this).find('a').attr('href')).offset().top - $headerHeight;
-		console.log($targetTop);
-
-		$('html, body').animate({
-		        scrollTop: $targetTop
-		}, 500);
+		goToSection(sectionName);
 
 	});
 
 	/*
-		Toggle Mobile Menu
+		Slideshow button
+	 */
+	
+	$('slideshow__button').on('click', function(e){
+		e.preventDefault();
+		goToSection($())
+	})
+
+	/*
+		ToNameggle Mobile Menu
 	 */
 
 	 $('.navigation__mobile_toggle').on('click', function(){

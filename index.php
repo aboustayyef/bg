@@ -33,7 +33,7 @@
 	    </div>
 
 	    <div id="contact" class="section bgSection">
-	    	<h3>Contact Us</h3>
+	    	<?php include_once($path . '/partials/contacts.php'); ?>
 	    </div>
 
 	</div>

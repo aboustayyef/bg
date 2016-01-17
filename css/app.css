@@ -720,6 +720,11 @@
       -ms-flex-pack: distribute;
           justify-content: space-around; }
 
+.borderbottom {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed silver; }
+
 .utlity__nomargins {
   margin: 0; }
 
@@ -737,6 +742,9 @@
 
 body {
   padding-top: 100px; }
+
+img {
+  max-width: 100%; }
 
 .layout__inner {
   max-width: 1344px;
@@ -987,8 +995,8 @@ body {
   font-family: "Lato";
   line-height: 1.8; }
 
-#contact {
-  background-color: pink; }
+#lb_collection {
+  background: #efefef; }
 
 .bgSection {
   border-top: 10px solid #ededed;
@@ -1016,5 +1024,9 @@ body {
   max-width: 100%; }
 
 .bgCollection__h3 {
+  color: #98aff3;
+  text-transform: uppercase; }
+
+.bgContact__h3 {
   color: #98aff3;
   text-transform: uppercase; }
