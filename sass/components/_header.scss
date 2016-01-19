@@ -3,17 +3,21 @@ body{
 	margin:0;
 }
 #header{
-	background-color:white;
 	height:100px;
 	position:fixed;
 	top:0;
 	z-index:10000;
 	width:100%;
+}
+.header__outer_wrapper{
+	margin:auto;
+	width:100%;
+	max-width:$bgMaxWidth;
+	overflow:auto;
+	background:white;
 	border-bottom:1px solid #E6E6E6;
 }
 .header__wrapper{
-	overflow:auto;
-	max-width:$bgMaxWidth;
 	background-color:white;
 	margin:0 auto;
 	display:flex;
@@ -28,7 +32,7 @@ body{
 	background-size: 250px 57px;
 	flex-basis:300px;
 	@media all and (max-width:400px){
-		width: 125px;
-		background-size: 155px auto;
+		width: 150px;
+		background-size: 185px auto;
 	}
 }

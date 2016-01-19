@@ -758,17 +758,21 @@ body {
   margin: 0; }
 
 #header {
-  background-color: white;
   height: 100px;
   position: fixed;
   top: 0;
   z-index: 10000;
+  width: 100%; }
+
+.header__outer_wrapper {
+  margin: auto;
   width: 100%;
+  max-width: 1680px;
+  overflow: auto;
+  background: white;
   border-bottom: 1px solid #E6E6E6; }
 
 .header__wrapper {
-  overflow: auto;
-  max-width: 1680px;
   background-color: white;
   margin: 0 auto;
   display: -webkit-box;
@@ -794,16 +798,17 @@ body {
           flex-basis: 300px; }
   @media all and (max-width: 400px) {
     .header__logo {
-      width: 125px;
-      background-size: 155px auto; } }
+      width: 150px;
+      background-size: 185px auto; } }
 
 .navigation__mobile_toggle {
-  font-size: 20px;
-  background: silver;
+  font-size: 18px;
+  background: #EAEAEA;
+  border: 1px solid #DADADA;
   display: inline-block;
   line-height: 10px;
-  height: 40px;
-  padding: 15px;
+  height: 36px;
+  padding: 12px;
   position: absolute;
   top: 25px;
   right: 10px;
@@ -835,9 +840,6 @@ body {
   display: inline-block; }
   .navigation__link.active .navigation__item {
     color: silver; }
-  .navigation__link.active .navigation--highlight {
-    color: white;
-    border-bottom: none; }
 
 .navigation__list {
   display: -webkit-box;
@@ -858,13 +860,11 @@ body {
     color: silver; }
 
 .navigation--highlight {
-  color: white;
-  background: #3D68E8;
-  border-radius: 10px;
+  border: 1px solid silver;
   padding: 10px 25px; }
   .navigation--highlight:hover {
     color: white;
-    background: #1a4ad8; }
+    background: black; }
 
 @media screen and (max-width: 850px) {
   .navigation__mobile_toggle {
@@ -919,7 +919,8 @@ body {
 
   .navigation--highlight {
     background: inherit;
-    padding: inherit; }
+    padding: inherit;
+    border: none; }
     .navigation--highlight:hover {
       background: inherit;
       color: #3D68E8; } }
@@ -959,8 +960,8 @@ body {
 .slideshow__button {
   color: white;
   text-decoration: none;
-  display: inline-block;
-  padding: 5px 15px;
+  display: inline;
+  padding: 10px 15px;
   border: 1px solid white;
   font-size: 1.4rem;
   background: rgba(0, 0, 0, 0.3); }
@@ -992,6 +993,7 @@ body {
   text-transform: uppercase; }
 
 body {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-family: "Lato";
   line-height: 1.8; }
 

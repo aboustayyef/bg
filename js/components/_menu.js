@@ -41,6 +41,8 @@ $(document).ready(function(){
 
 		goToSection(sectionName);
 
+		$('.navigation').removeClass('active');
+
 	});
 
 	/*
