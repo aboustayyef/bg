@@ -1,0 +1,27 @@
+#modalpage{
+	display:none;
+	z-index:2;
+	position:fixed;
+	top:100px;
+	left:0;
+	right:0;
+	bottom:0;
+	overflow-y:scroll;
+	background:darken(white,5);
+	@include transition(all 0.2s ease-in-out);
+	&.active{
+		display:block;
+	}
+}
+
+#closewindow{
+	overflow:auto;
+	background:black;
+	padding:10px 20px;
+	font-size:20px;
+	a{
+		text-decoration:none;
+		color:white;
+		text-transform:uppercase;
+	}
+}

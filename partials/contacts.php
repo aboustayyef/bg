@@ -1,6 +1,6 @@
 <div class="layout__inner">
 	<h2>Contact Us</h2>
-	<p>Call us or visit one of our showrooms in Accra or Tema for assistance</p>
+	<p class="lead">Come visit one of our showrooms in Accra or Tema to know why top executives, community leaders and celebrities are choosing our products</p>
 	<div class="container-fluid">
 		<div class="row borderbottom">
 

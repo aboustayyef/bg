@@ -46,6 +46,10 @@
 				border-bottom:none;
 			}		
 		}
+		&.nobackground{
+			background:none;
+			border:none;
+		}
 	}
 
 	.navigation--highlight{

@@ -720,6 +720,13 @@
       -ms-flex-pack: distribute;
           justify-content: space-around; }
 
+.nobackground {
+  background: transparent;
+  border: none; }
+
+.light {
+  font-weight: 300; }
+
 .borderbottom {
   padding-bottom: 15px;
   margin-bottom: 15px;
@@ -742,6 +749,8 @@
 
 body {
   padding-top: 100px; }
+  body.noscroll {
+    overflow: hidden; }
 
 img {
   max-width: 100%; }
@@ -916,6 +925,9 @@ body {
     .navigation__link.active .navigation--highlight {
       color: #3D68E8;
       border-bottom: none; }
+    .navigation__link.nobackground {
+      background: none;
+      border: none; }
 
   .navigation--highlight {
     background: inherit;
@@ -997,6 +1009,15 @@ body {
   font-family: "Lato";
   line-height: 1.8; }
 
+p.lead {
+  color: #444;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 10px 0;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 1.2; }
+
 #lb_collection {
   background: #efefef; }
 
@@ -1032,3 +1053,28 @@ body {
 .bgContact__h3 {
   color: #98aff3;
   text-transform: uppercase; }
+
+#modalpage {
+  display: none;
+  z-index: 2;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  background: #f2f2f2;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  #modalpage.active {
+    display: block; }
+
+#closewindow {
+  overflow: auto;
+  background: black;
+  padding: 10px 20px;
+  font-size: 20px; }
+  #closewindow a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase; }

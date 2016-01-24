@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Blue Gallery is Ghana’s top destination for premium home &amp; office furniture">
 	<title>Blue Gallery Home &amp; Office - Contemporary furniture in Ghana</title>
-	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
@@ -15,8 +15,7 @@
 		<?php include_once($path . '/partials/header.php'); ?>	
 	</header>
 
-	<div id="fullpage">
-	    
+	<div id="fullpage">   
 	    <div id="home" class="section bgSection bgSection--notop">
 			<?php include_once($path . '/partials/slides.php'); ?>
 			<?php include_once($path . '/partials/features.php') ?>
@@ -37,7 +36,14 @@
 	    <div id="contact" class="section bgSection">
 	    	<?php include_once($path . '/partials/contacts.php'); ?>
 	    </div>
-
+	</div>
+	<div id="modalpage">
+			<div id="closewindow">
+				<div class="layout__inner">
+					<a href="#" class="light off-modal">X Close</a>
+				</div>
+			</div>
+			<?php include($path . '/partials/contacts.php'); ?>			
 	</div>
 	<script src="js/min/app-min.js"></script>
 </body>

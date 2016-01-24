@@ -4,6 +4,9 @@
 		<div class="row">
 			<div class="col-md-12">
 				<h2>Why Blue Gallery?</h2>
+				<p class="lead">
+					The many reasons why our goods are heads and shoulders above the rest
+				</p>
 			</div>
 			<div class="col-md-4">
 				<h3 class="bgFeature__h3">Modern</h3>
