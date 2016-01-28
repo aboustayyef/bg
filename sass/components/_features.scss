@@ -6,3 +6,9 @@
 .bgFeature__h3{
 	@include colored_h3();
 }
+
+.customer_logos img{
+	float:left;
+	margin-left:10px;
+	margin-top:10px;
+}

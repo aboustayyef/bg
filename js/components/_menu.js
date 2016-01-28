@@ -19,6 +19,9 @@ $(document).ready(function(){
 		// make clicked on item active
 		$('[menuanchor="' + sectionName + '"]').addClass('active');
 
+		// skip scrolling to section if section is "contact"
+		if (sectionName == 'contact') { return };
+
 		// now slide to wanted section;
 		var $headerHeight = $('#header').outerHeight();
 		var $targetTop = $('#'+sectionName).offset().top - $headerHeight;

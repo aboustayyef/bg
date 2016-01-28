@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
-	
+	<div class="page__shroud"></div>	
 	<header id="header">
 		<?php include_once($path . '/partials/header.php'); ?>	
 	</header>
@@ -40,7 +40,7 @@
 	<div id="modalpage">
 			<div id="closewindow">
 				<div class="layout__inner">
-					<a href="#" class="light off-modal">X Close</a>
+					<a href="#" class="light off-modal">&times; close</a>
 				</div>
 			</div>
 			<?php include($path . '/partials/contacts.php'); ?>			

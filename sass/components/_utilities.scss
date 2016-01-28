@@ -37,3 +37,9 @@
 .rightGutter{
 	padding-right:20px;
 }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
