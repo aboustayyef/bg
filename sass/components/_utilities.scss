@@ -4,9 +4,23 @@
 	justify-content: space-around;
 }
 
+.mobileHide{
+	@media all and (max-width:600px){
+		display:none;
+	}
+}
+
 .nobackground{
 	background:transparent;
 	border:none;
+}
+
+.nomargin{
+	margin:0;
+}
+
+.darkerBackground{
+	background:#efefef;
 }
 
 .light{

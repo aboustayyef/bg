@@ -1,7 +1,6 @@
 $(document).ready(function(){
-	var allSlides = [
+	var fullSlides = [
 		"../img/slides/reference_silver_088.jpg",
-		"../img/slides/amos_2013_001.jpg",
 		"../img/slides/sanders_003.jpg",
 		"../img/slides/kanaha_003.jpg",
 		"../img/slides/morrison_00.jpg",
@@ -10,9 +9,19 @@ $(document).ready(function(){
 		"../img/slides/vista_74_75.jpg",
 	];
 
+	var mobileSlides = [
+		"../img/slides/lowres_interstuhl_ambient_yellow.jpg"
+	]
+
+	if (window.outerWidth < 601) {
+		var slides = mobileSlides;
+	}else{
+		var slides = fullSlides;
+	}
+
 	// Slideshow at top
 	$(".slideshow__slides").backstretch(
-		allSlides, {
+		slides, {
 	  	duration: 4000,
 	  	fade: 950
 	  });

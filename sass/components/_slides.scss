@@ -17,6 +17,12 @@
 	backface-visibility: hidden;
 }
 
+.slideshow__wrapper, .slideshow__slides{
+	@media all and (max-width:600px){
+		min-height:400px;
+	}
+}
+
 .slideshow__info {
     display: inline-block;
     /* margin-top: 100px; */

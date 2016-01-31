@@ -15,7 +15,7 @@
 		</div>
 		<div class="col-md-4">
 			<h3 class="bgCollection__h3">Accessories</h3>
-			<img class="bgCollection__image" src="http://placehold.it/400x300" alt="">
+			<img class="bgCollection__image" src="/img/collection_accessories.jpg" alt="">
 			<p>Rugs, Bowls, vases, dishes,shelf objects & candle holders that will make a great complement to any living area with their distinctive and exquisite style to add more life and spirit to your home.</p>
 		</div>
 	</div>

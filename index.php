@@ -18,9 +18,13 @@
 	<div id="fullpage">   
 	    <div id="home" class="section bgSection bgSection--notop">
 			<?php include_once($path . '/partials/slides.php'); ?>
+		</div>
+		<div id="features" class="section bgSection">
 			<?php include_once($path . '/partials/features.php') ?>
 		</div>
-	    
+		<div id="customers" class="section bgSection">
+			<?php include_once($path . '/partials/customers.php') ?>
+		</div>    
 	    <div id="lb_collection" class="section bgSection">
 		    <?php include_once($path . '/partials/collection.php'); ?>
 	    </div>
