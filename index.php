@@ -7,7 +7,7 @@
 	<meta name="description" content="Blue Gallery is Ghana’s top destination for premium home &amp; office furniture">
 	<title>Blue Gallery Home &amp; Office - Contemporary furniture in Ghana</title>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css?v=1.01">
 </head>
 <body>
 	<div class="page__shroud"></div>	
