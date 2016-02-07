@@ -26,6 +26,7 @@
 }
 
 .navigation__link{
+	cursor:pointer;
 	display:inline-block;
 	&.active{
 		.navigation__item{

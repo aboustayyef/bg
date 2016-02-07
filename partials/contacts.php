@@ -11,8 +11,8 @@
 					<div class="bgContact__caption bgContact__caption--light">
 						<p class="bgContact__address">Aflao Road, Opposite Shell station</p>					
 						<ul class="bgContact__buttonList">
-							<li class="bgContact__button">+233 303300121</li>
-							<li class="bgContact__button bgContact__button--inverse"><a target="_blank" href="https://www.google.com.gh/maps/place/Blue+Gallery+Home+%26+Office+Furniture/@5.688309,-0.0131917,17z/data=!3m1!4b1!4m2!3m1!1s0xfdf80629b203513:0xc882e55521da4358">Map</a></li>
+							<li class="bgContact__button" onclick="ga('send', 'event', 'action', 'call' , 'Accra')">+233 303300121</li>
+							<li class="bgContact__button bgContact__button--inverse" onclick="ga('send', 'event', 'action', 'click' , 'Accra Map')"><a target="_blank" href="https://www.google.com.gh/maps/place/Blue+Gallery+Home+%26+Office+Furniture/@5.688309,-0.0131917,17z/data=!3m1!4b1!4m2!3m1!1s0xfdf80629b203513:0xc882e55521da4358">Map</a></li>
 						</ul>
 					</div>
 				</div>
@@ -24,8 +24,8 @@
 					<div class="bgContact__caption">
 						<p class="bgContact__address">Max Mart Shopping Centre. Near Military 37 Hospital</p>					
 						<ul class="bgContact__buttonList">
-							<li class="bgContact__button">+233 264672320</li>
-							<li class="bgContact__button bgContact__button--inverse"><a target="_blank" href="https://www.google.com.gh/maps/place/MaxMart+37/@5.5912118,-0.1827627,17z/data=!3m1!4b1!4m2!3m1!1s0xfdf9af0f042678d:0x221a17e53ebbdebf">Map</a></li>
+							<li class="bgContact__button" onclick="ga('send', 'event', 'action', 'call' , 'Tema')">+233 264672320</li>
+							<li class="bgContact__button bgContact__button--inverse" onclick="ga('send', 'event', 'action', 'click' , 'Tema Map')""><a target="_blank" href="https://www.google.com.gh/maps/place/MaxMart+37/@5.5912118,-0.1827627,17z/data=!3m1!4b1!4m2!3m1!1s0xfdf9af0f042678d:0x221a17e53ebbdebf">Map</a></li>
 						</ul>
 					</div>
 				</div>
@@ -38,10 +38,10 @@
 				<p>On Social Media</p>
 			</div>
 			<ul class="social_media">
-				<li><a href="https://facebook.com/blue.gallery.ghana"><img src="img/socialmediaicons/facebook.png" alt="Blue Gallery on Facebook"></a></li>
-				<li><a href="https://pinterest.com/bluegallery"><img src="img/socialmediaicons/pinterest.png" alt="Blue Gallery on Pinterest"></a></li>
-				<li><a href="https://twitter.com/blue_gallery"><img src="img/socialmediaicons/twitter.png" alt="Blue Gallery on Twitter"></a></li>
-				<li><a href="https://instagram.com/bluegallery_ghana"><img src="img/socialmediaicons/instagram.png" alt="Blue Gallery on Instagram"></a></li>
+				<li><a href="https://facebook.com/blue.gallery.ghana"><img src="img/socialmediaicons/facebook.png" alt="Blue Gallery on Facebook" onclick="ga('send', 'event', 'exit link', 'social media' , 'facebook')"></a></li>
+				<li><a href="https://pinterest.com/bluegallery"><img src="img/socialmediaicons/pinterest.png" alt="Blue Gallery on Pinterest" onclick="ga('send', 'event', 'exit link', 'social media' , 'pinterest')"></a></li>
+				<li><a href="https://twitter.com/blue_gallery"><img src="img/socialmediaicons/twitter.png" alt="Blue Gallery on Twitter" onclick="ga('send', 'event', 'exit link', 'social media' , 'twitter')"></a></li>
+				<li><a href="https://instagram.com/bluegallery_ghana"><img src="img/socialmediaicons/instagram.png" alt="Blue Gallery on Instagram" onclick="ga('send', 'event', 'exit link', 'social media' , 'instagram')"></a></li>
 			</ul>
 		</div>
 	</div>
