@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<h2>Why Blue Gallery?</h2>
-				<p class="lead nomargin">6 reasons why we're the smart choice</p>
+				<p class="lead nomargin">6 reasons why our furniture stands out</p>
 			</div>
 		</div>
 		<div class="row">
@@ -24,7 +24,7 @@
 		<div class="row">
 			<div class="col-md-4">
 				<h3 class="bgFeature__h3">In Stock</h3>
-				<p>with 2 showrooms and a combined display of 1700m2, The furniture you desire in less than a day. No more waiting</p>
+				<p>With 2 showrooms and a combined display of 1700m2, The furniture you desire in less than a day. No more waiting</p>
 			</div>
 			<div class="col-md-4">
 				<h3 class="bgFeature__h3">Made in Europe</h3>
@@ -32,7 +32,7 @@
 			</div>
 			<div class="col-md-4">
 				<h3 class="bgFeature__h3">Award Winning</h3>
-				<p>reddot, IF design award, German Design Award and FX design award just to name a few.</p>
+				<p>Reddot, IF design award, German Design Award and FX design award just to name a few.</p>
 			</div>			
 		</div>
 	</div>
